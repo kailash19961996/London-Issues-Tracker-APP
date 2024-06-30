@@ -4,7 +4,7 @@ import requests
 import pydeck as pdk
 
 # Load the data
-data = pd.read_csv('/Users/kailashkumar/Documents/broken_window/kai-folder/broken-window-hackathon/TEST2/REPORTED_DATA.csv', parse_dates=[0])
+data = pd.read_csv('REPORTED_DATA.csv', parse_dates=[0])
 
 # Function to get user's location based on IP address
 def get_user_location():
