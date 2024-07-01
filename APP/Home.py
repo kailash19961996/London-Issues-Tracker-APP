@@ -100,8 +100,8 @@ def save_image_data(timestamp, latitude, longitude, image_path, category, commen
     with open(csv_path, 'a') as f:
         f.write(f"{timestamp},{latitude},{longitude},{category},{image_path},{comment}\n")
 
-w_size = 200
-h_size = 200
+w_size = 250
+h_size = 250
 
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
