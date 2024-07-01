@@ -25,7 +25,9 @@ def get_user_location():
     return latitude, longitude
 
 # Get the user's location
-current_latitude, current_longitude = get_user_location()
+# current_latitude, current_longitude = get_user_location()
+
+current_latitude, current_longitude = 51.5130,-0.0897
 
 # Check if the data contains the required columns
 if 'latitude' in data.columns and 'longitude' in data.columns:
