@@ -2,9 +2,18 @@ import streamlit as st
 import pandas as pd
 import requests
 import pydeck as pdk
+from background import add_bg_from_local
+
+add_bg_from_local('background_images/background.gif')
 
 # Load the data
 data = pd.read_csv('REPORTED_DATA.csv', parse_dates=[0])
+
+st.markdown("""
+<div style='text-align: center;'>
+    <h1> Report Map </h2>
+</div>
+""", unsafe_allow_html=True)
 
 # Function to get user's location based on IP address
 def get_user_location():
@@ -18,11 +27,6 @@ def get_user_location():
 # Get the user's location
 current_latitude, current_longitude = get_user_location()
 
-st.title('Maps')
-
-# Display the user's location
-st.write(f"Your location is: Latitude: {current_latitude}, Longitude: {current_longitude}")
-
 # Check if the data contains the required columns
 if 'latitude' in data.columns and 'longitude' in data.columns:
     # Create a new dataframe for the map
@@ -31,9 +35,9 @@ if 'latitude' in data.columns and 'longitude' in data.columns:
 else:
     st.write("The CSV file does not contain 'latitude' and 'longitude' columns.")
 
-# Add the user's location to the map data
-user_location = pd.DataFrame({'lat': [current_latitude], 'lon': [current_longitude], 'category': ['Your Location'], 'comment': ['This is your current location']})
-map_data = pd.concat([map_data, user_location], ignore_index=True)
+# # Add the user's location to the map data
+# user_location = pd.DataFrame({'lat': [current_latitude], 'lon': [current_longitude], 'category': ['Your Location'], 'comment': ['This is your current location']})
+# map_data = pd.concat([map_data, user_location], ignore_index=True)
 
 # Display the map using pydeck
 layer = pdk.Layer(
@@ -50,18 +54,26 @@ tooltip = {
     "html": "<b>Category:</b> {category} <br/><b>Comment:</b> {comment}",
     "style": {
         "backgroundColor": "steelblue",
-        "color": "white"
+        "color": "white",
     }
 }
 
 view_state = pdk.ViewState(latitude=current_latitude, longitude=current_longitude, zoom=12)
-r = pdk.Deck(layers=[layer], initial_view_state=view_state, tooltip=tooltip)
+r = pdk.Deck(layers=[layer], 
+             initial_view_state=view_state, 
+             tooltip=tooltip,
+             map_style='mapbox://styles/mapbox/light-v10',)
 st.pydeck_chart(r)
 
+# Display the user's location
+st.write(f"Your location is: Latitude: {current_latitude}, Longitude: {current_longitude}")
+
 # Display the dataframe to inspect the columns
-st.title('USER DATA')
+st.markdown("""
+<div style='text-align: center;'>
+    <h1> User Reports </h2>
+</div>
+""", unsafe_allow_html=True)
+
 st.write(data)
 # st.write(map_data)
-
-# Display the map
-# st.map(map_data)
