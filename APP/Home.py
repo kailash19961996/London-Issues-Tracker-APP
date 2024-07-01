@@ -224,7 +224,7 @@ st.markdown("""
 
 # Display the user's location
 st.write(f"Your current location is: Latitude: {current_latitude}, Longitude: {current_longitude}")
-st.write(f"NOTE: The location is identified based on the IP address, since steamlit servers are located at Dalles, Oregon, United States, you will find the current location to be wrong.")
+st.write(f"NOTE: The location is identified based on the IP address, since streamlit servers are located at Dalles, Oregon, United States, you will find the current location to be wrong.")
 st.markdown("""
 <div style='text-align: center;'>
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
