@@ -37,9 +37,9 @@ if 'latitude' in data.columns and 'longitude' in data.columns:
 else:
     st.write("The CSV file does not contain 'latitude' and 'longitude' columns.")
 
-# # Add the user's location to the map data
-# user_location = pd.DataFrame({'lat': [current_latitude], 'lon': [current_longitude], 'category': ['Your Location'], 'comment': ['This is your current location']})
-# map_data = pd.concat([map_data, user_location], ignore_index=True)
+# Add the user's location to the map data
+user_location = pd.DataFrame({'lat': [current_latitude], 'lon': [current_longitude], 'category': ['Your Location'], 'comment': ['This is your current location']})
+map_data = pd.concat([map_data, user_location], ignore_index=True)
 
 # Display the map using pydeck
 layer = pdk.Layer(
