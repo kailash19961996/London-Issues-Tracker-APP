@@ -1,7 +1,7 @@
 # London Issues Tracker
 
 ## Project Overview
-The London Issues Tracker is an interactive platform designed to engage community members and policymakers in addressing key urban challenges. This project, developed for a hackathon organized by 'Future House' with contributions from policymakers and tech enthusiasts, leverages artificial intelligence to efficiently process and analyze user-submitted reports, providing valuable insights into urban issues.
+The London Issues Tracker is an interactive platform designed to engage community members and policymakers in addressing key urban challenges. This project, developed for a hackathon organized by '[Future House](https://futurehouse.uk/)' with contributions from policymakers and tech enthusiasts, leverages artificial intelligence to efficiently process and analyze user-submitted reports, providing valuable insights into urban issues.
 
 [Click here to try the app](https://neighbourhood-app.streamlit.app/)
 
