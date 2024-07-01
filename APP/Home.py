@@ -125,7 +125,7 @@ if uploaded_file is not None:
             with open(sample_image_path, "rb") as file:
                 st.markdown("""
                     <div style='text-align: center;'>
-                    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
                     </div>
                     """, unsafe_allow_html=True)
                 
@@ -134,7 +134,7 @@ if uploaded_file is not None:
                 st.write(f"If you are not sure what to upload, download the same image below.")
                 st.markdown("""
                     <div style='text-align: center;'>
-                    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
                     </div>
                     """, unsafe_allow_html=True)
                 btn = st.download_button(
