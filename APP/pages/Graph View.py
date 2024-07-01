@@ -10,7 +10,7 @@ add_bg_from_local('APP/background_images/background.gif')
 st.title('Comments Over Time by Category')
 
 # Load the provided CSV file
-file_path = 'REPORTED_DATA.csv'  # Update this path as necessary
+file_path = 'APP/REPORTED_DATA.csv'  # Update this path as necessary
 df = pd.read_csv(file_path)
 
 # Clean the timestamp column

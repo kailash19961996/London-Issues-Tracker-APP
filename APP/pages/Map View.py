@@ -7,7 +7,7 @@ from background import add_bg_from_local
 add_bg_from_local('APP/background_images/background.gif')
 
 # Load the data
-data = pd.read_csv('REPORTED_DATA.csv', parse_dates=[0])
+data = pd.read_csv('APP/REPORTED_DATA.csv', parse_dates=[0])
 
 st.markdown("""
 <div style='text-align: center;'>
