@@ -80,7 +80,7 @@ Use Latest and powerful LLM's like GPT-4o to summarize this report
 
 st.markdown("""
 <div style='text-align: center;'>
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -         
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  
 </div>
 """, unsafe_allow_html=True)
 
