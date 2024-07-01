@@ -3,7 +3,7 @@ import pandas as pd
 import openai
 import os
 from background import add_bg_from_local
-from Home import openai.api_key
+from Home import api_key
 add_bg_from_local('APP/background_images/whitebgs.jpg')
 
 # Set OpenAI API key
