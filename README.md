@@ -3,23 +3,23 @@
 ## Project Overview
 The London Issues Tracker is an interactive platform designed to engage community members and policymakers in addressing key urban challenges. This project, developed for a hackathon organized by 'Future House' with contributions from policymakers and tech enthusiasts, leverages artificial intelligence to efficiently process and analyze user-submitted reports, providing valuable insights into urban issues.
 
-[Checkout the website](https://neighbourhood-app.streamlit.app/)
+[Click here to try the app](https://neighbourhood-app.streamlit.app/)
 
 ## Key Features
 
 1. **Home Page**: Users can upload images and comments about urban issues they encounter and see them updated in real-time on interactive maps, which are also visible to other users.
-![Screenshot 2024-07-02 at 12 08 19 AM](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/345c1e37-5691-4485-81ad-9aeb5790fd75)
-![Screenshot 2024-07-01 at 9 43 10 PM](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/8057f0d1-adba-41d7-bb38-f7b4308470dc)
-![Screenshot 2024-07-01 at 9 44 28 PM](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/ef859540-93b7-4f9b-b894-16f4d69d751b)
+![Screenshot 2024-07-02 at 12 12 29 AM](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/2a60e017-ee6c-4ca4-a056-002c9ab449c1)
+![Screenshot 2024-07-02 at 12 12 51 AM](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/ddacccd0-2028-471b-add5-731e4df28044)
+![Screenshot 2024-07-02 at 12 13 32 AM](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/d9e89235-1488-4eea-bcf7-d1a949c08901)
 
 2. **Reports**: Provides graphical representations of issue trends over time, helping track progress and hold authorities accountable.
-![Screenshot 2024-07-01 at 9 44 51 PM](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/5bb27101-92c0-4599-92c2-2d9b50f50cfe)
+![Screenshot 2024-07-02 at 12 13 48 AM](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/489f52aa-22e4-4c00-a5d9-dfeb24cb38f2)
 
 3. **Interactive Maps**: Real-time visualization of reported issues, allowing users and policymakers to see what's happening in their area.
-![Screenshot 2024-07-01 at 10 00 51 PM](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/ec72c859-1c7c-407a-b22a-1a1b0b8500ba)
+![Screenshot 2024-07-02 at 12 13 58 AM](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/ff492c99-866f-4a41-b5f6-1074a9bc4695)
 
 4. **Summary Page**: AI-generated summaries of user comments for each category of urban issues.
-![Screenshot 2024-07-01 at 10 01 24 PM](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/3fcce028-0496-4c34-8ce9-5d5ab1031f22)
+![Screenshot 2024-07-02 at 12 14 32 AM](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/b4c91ddb-5cde-43f7-be4b-a67716812667)
 
 ## AI Integration
 
