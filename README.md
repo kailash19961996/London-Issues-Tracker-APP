@@ -5,6 +5,9 @@ The London Issues Tracker is an interactive platform designed to engage communit
 
 [Click here to try the app](https://neighbourhood-app.streamlit.app/)
 
+or scan the QR code
+![LIT_APP_QR_code](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/c4dc64e5-c367-4433-853d-d86f6dcd8238)
+
 ## Key Features
 
 1. **Home Page**: Users can upload images and comments about urban issues they encounter and see them updated in real-time on interactive maps, which are also visible to other users.
