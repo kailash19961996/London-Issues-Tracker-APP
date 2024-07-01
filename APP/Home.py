@@ -1,5 +1,6 @@
 import streamlit as st
 import os
+import time
 from datetime import datetime
 from PIL import Image
 import openai
@@ -100,6 +101,26 @@ def save_image_data(timestamp, latitude, longitude, image_path, category, commen
     with open(csv_path, 'a') as f:
         f.write(f"{timestamp},{latitude},{longitude},{category},{image_path},{comment}\n")
 
+def show_gif_overlay(gif_path, duration):
+    gif_html = f"""
+        <style>
+        .gif-overlay {{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+        }}
+        </style>
+        <div class="gif-overlay">
+            <img src="data:image/gif;base64,{base64.b64encode(open(gif_path, "rb").read()).decode()}" alt="Overlay GIF">
+        </div>
+    """
+    overlay_placeholder = st.empty()
+    overlay_placeholder.markdown(gif_html, unsafe_allow_html=True)
+    time.sleep(duration)
+    overlay_placeholder.empty()
+
 w_size = 250
 h_size = 250
 
@@ -147,7 +168,7 @@ if uploaded_file is not None:
         comment = st.text_input("Add a comment about the image:")
 
         if st.button('Submit Comment'):
-            add_bg_from_local('APP/background_images/background.gif')
+            show_gif_overlay('APP/background_images/stars.gif', duration=5)
             # Get the timestamp
             timestamp = datetime.now()
             formatted_timestamp = timestamp.strftime('%Y-%m-%d %H:%M:%S')
