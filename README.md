@@ -6,9 +6,17 @@ Urban Issues Tracker is an interactive platform designed to engage community mem
 ## Key Features
 
 1. **Home Page**: Users can upload images and comments about urban issues they encounter.
+![Screenshot 2024-07-01 at 9 43 10 PM](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/8057f0d1-adba-41d7-bb38-f7b4308470dc)
+![Screenshot 2024-07-01 at 9 44 28 PM](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/ef859540-93b7-4f9b-b894-16f4d69d751b)
+
 2. **Interactive Maps**: Real-time visualization of reported issues, allowing users and policymakers to see what's happening in their area.
+![Screenshot 2024-07-01 at 9 44 51 PM](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/5bb27101-92c0-4599-92c2-2d9b50f50cfe)
+
 3. **Reports**: Graphical representation of issue trends over time, helping track progress and hold authorities accountable.
+![Screenshot 2024-07-01 at 10 00 51 PM](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/ec72c859-1c7c-407a-b22a-1a1b0b8500ba)
+
 4. **Summary Page**: AI-generated summaries of user comments for each category of urban issues.
+![Screenshot 2024-07-01 at 10 01 24 PM](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/3fcce028-0496-4c34-8ce9-5d5ab1031f22)
 
 ## AI Integration
 
