@@ -94,7 +94,7 @@ st.markdown("""
 # Summarize comments
 if st.button('Summarize Comments'):
     summaries = summarize_comments(df)
-    show_gif_overlay('APP/background_images/stars.gif', duration=8)
+    show_gif_overlay('APP/background_images/stars2.gif', duration=8)
     st.markdown(summaries)
 
 # Display the dataframe to inspect the columns
