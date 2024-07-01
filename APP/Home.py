@@ -9,7 +9,7 @@ import base64
 from io import BytesIO
 from background import add_bg_from_local
 
-add_bg_from_local('background_images/whitebgs.jpg')
+add_bg_from_local('APP/background_images/whitebgs.jpg')
 
 st.markdown("""
 <div style='text-align: center;'>

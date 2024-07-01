@@ -4,7 +4,7 @@ import openai
 import os
 from background import add_bg_from_local
 
-add_bg_from_local('background_images/whitebgs.jpg')
+add_bg_from_local('APP/background_images/whitebgs.jpg')
 
 # Set OpenAI API key
 api_key = st.secrets["openai"]["api_key"]
