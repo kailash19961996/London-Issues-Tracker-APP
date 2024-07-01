@@ -7,7 +7,7 @@ from background import add_bg_from_local
 add_bg_from_local('background_images/whitebgs.jpg')
 
 # Set OpenAI API key
-api_key = os.getenv('OPENAI_API_KEY')
+api_key = st.secrets["openai"]["api_key"]
 if api_key is None:
     raise ValueError("API key not found. Please set the OPENAI_API_KEY environment variable.")
 openai.api_key = api_key
