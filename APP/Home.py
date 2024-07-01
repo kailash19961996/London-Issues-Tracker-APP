@@ -100,12 +100,15 @@ def save_image_data(timestamp, latitude, longitude, image_path, category, commen
     with open(csv_path, 'a') as f:
         f.write(f"{timestamp},{latitude},{longitude},{category},{image_path},{comment}\n")
 
+w_size = 300
+h_size = 300
+
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
 
     # Resize the image to half its original size
     original_size = image.size
-    new_size = (int(original_size[0] / 2), int(original_size[1] / 2))
+    new_size = (int(w_size), int(h_size))
     resized_image = image.resize(new_size)
 
     # Display the resized image
