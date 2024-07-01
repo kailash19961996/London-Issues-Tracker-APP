@@ -5,7 +5,7 @@ Urban Issues Tracker is an interactive platform designed to engage community mem
 
 ## Key Features
 
-1. **Home Page**: Users can upload images and comments about urban issues they encounter.
+1. **Home Page**: Users can upload images and comments about urban issues they encounter and see it lively updated in the maps which is also visible for other users.
 ![Screenshot 2024-07-01 at 9 43 10 PM](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/8057f0d1-adba-41d7-bb38-f7b4308470dc)
 ![Screenshot 2024-07-01 at 9 44 28 PM](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/ef859540-93b7-4f9b-b894-16f4d69d751b)
 
