@@ -1,15 +1,15 @@
-# Urban Issues Tracker
+# London Issues Tracker
 
 ## Project Overview
-Urban Issues Tracker is an interactive platform designed to engage community members and policymakers in addressing key urban challenges. The project leverages artificial intelligence to efficiently process and analyze user-submitted reports, providing valuable insights into urban issues.
+The London Issues Tracker is an interactive platform designed to engage community members and policymakers in addressing key urban challenges. This project, developed for a hackathon organized by 'Future House' with contributions from policymakers and tech enthusiasts, leverages artificial intelligence to efficiently process and analyze user-submitted reports, providing valuable insights into urban issues.
 
 ## Key Features
 
-1. **Home Page**: Users can upload images and comments about urban issues they encounter and see it lively updated in the maps which is also visible for other users.
+1. **Home Page**: Users can upload images and comments about urban issues they encounter and see them updated in real-time on interactive maps, which are also visible to other users.
 ![Screenshot 2024-07-01 at 9 43 10 PM](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/8057f0d1-adba-41d7-bb38-f7b4308470dc)
 ![Screenshot 2024-07-01 at 9 44 28 PM](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/ef859540-93b7-4f9b-b894-16f4d69d751b)
 
-2. **Reports**: Graphical representation of issue trends over time, helping track progress and hold authorities accountable. 
+2. **Reports**: Provides graphical representations of issue trends over time, helping track progress and hold authorities accountable.
 ![Screenshot 2024-07-01 at 9 44 51 PM](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/5bb27101-92c0-4599-92c2-2d9b50f50cfe)
 
 3. **Interactive Maps**: Real-time visualization of reported issues, allowing users and policymakers to see what's happening in their area.
@@ -60,3 +60,8 @@ This project heavily relies on two AI models to enhance its functionality:
 9. **Collaboration Features**: Add AI-powered recommendation systems to connect users working on similar urban issues.
 
 10. **Data Anonymization**: Implement AI techniques to ensure user privacy while maintaining data utility for analysis and reporting.
+
+## Summary
+This app gives users the ability to report issues or suggestions and see what kinds of issues or suggestions people around them are making and how things are changing over time. This transparency is key to engaging the community.
+
+On the other side, it gives policymakers a unique opportunity to see the bigger picture, helping them decide which problems are critical and allocate resources accordingly.
