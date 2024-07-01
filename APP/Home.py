@@ -188,6 +188,7 @@ if 'latitude' in data.columns and 'longitude' in data.columns:
 else:
     st.write("The CSV file does not contain 'latitude' and 'longitude' columns.")
 
+
 # Display the map using pydeck
 layer = pdk.Layer(
     'ScatterplotLayer',
@@ -207,7 +208,7 @@ tooltip = {
     }
 }
 
-view_state = pdk.ViewState(latitude=fixed_latitude, longitude=fixed_longitude, zoom=12)
+view_state = pdk.ViewState(latitude=current_latitude, longitude=current_longitude, zoom=12)
 r = pdk.Deck(layers=[layer], 
              initial_view_state=view_state, 
              tooltip=tooltip,
@@ -219,6 +220,7 @@ st.markdown("""
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 </div>
 """, unsafe_allow_html=True)
+
 
 # Display the user's location
 st.write(f"Your current location is: Latitude: {current_latitude}, Longitude: {current_longitude}")
