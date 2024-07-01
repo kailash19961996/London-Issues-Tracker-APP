@@ -74,11 +74,11 @@ st.markdown("""
 
 st.markdown("""
 <div style='text-align: center;'>
-    < POWERED BY AI >
+Use Latest and powerful LLM's like GPT-4o to summarize this report
 </div>
 """, unsafe_allow_html=True)
 
-st.write(f"Use Latest and powerful LLM's like GPT-4o to summarize this report")
+
 # Summarize comments
 if st.button('Summarize Comments'):
     summaries = summarize_comments(df)
