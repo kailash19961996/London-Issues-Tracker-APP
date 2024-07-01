@@ -176,6 +176,12 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
+st.markdown("""
+<div style='text-align: center;'>
+Hover over the red spots for more information
+</div>
+""", unsafe_allow_html=True)
+
 # Get the user's location
 current_latitude, current_longitude = get_user_location()
 fixed_latitude, fixed_longitude = 51.5130,-0.0897
