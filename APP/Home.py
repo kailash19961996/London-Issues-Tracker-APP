@@ -106,7 +106,7 @@ def show_gif_overlay(gif_path, duration):
         <style>
         .gif-overlay {{
             position: fixed;
-            top: 0%;
+            top: 90%;
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 9999;
