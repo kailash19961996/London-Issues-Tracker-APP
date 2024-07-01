@@ -23,7 +23,11 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-
+st.markdown("""
+<div style='text-align: center;'>
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+</div>
+""", unsafe_allow_html=True)
 
 # File uploader
 uploaded_file = st.file_uploader("Choose an image...", type=['png', 'jpg', 'jpeg'])
@@ -122,9 +126,20 @@ if uploaded_file is not None:
         sample_image_path = 'APP/sample_image/graffiti.jpg'  # Path to your sample image
         if os.path.exists(sample_image_path):
             with open(sample_image_path, "rb") as file:
+                st.markdown("""
+                    <div style='text-align: center;'>
+                    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                    </div>
+                    """, unsafe_allow_html=True)
+                
                 st.write(f"NOTE : As of now, the model is designed to detect only these 6 categories: ")
                 st.write(f"Graffiti, Garbage, Broken Window, Green Spaces, Public Buildings, Sports and Social events")
                 st.write(f"If you are not sure what to upload, download the same image below.")
+                st.markdown("""
+                    <div style='text-align: center;'>
+                    - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                    </div>
+                    """, unsafe_allow_html=True)
                 btn = st.download_button(
                     label="Download a sample image",
                     data=file,

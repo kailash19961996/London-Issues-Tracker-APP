@@ -66,9 +66,20 @@ r = pdk.Deck(layers=[layer],
              map_style='mapbox://styles/mapbox/light-v10',)
 st.pydeck_chart(r)
 
+st.markdown("""
+<div style='text-align: center;'>
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+</div>
+""", unsafe_allow_html=True)
+
 # Display the user's location
 st.write(f"Your current location is: Latitude: {current_latitude}, Longitude: {current_longitude}")
 st.write(f"NOTE: The location is identified based on the IP address, since steamlit servers are located at Dalles, Oregon, United States, you will find the current location to be wrong.")
+st.markdown("""
+<div style='text-align: center;'>
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+</div>
+""", unsafe_allow_html=True)
 
 # Display the dataframe to inspect the columns
 st.markdown("""
