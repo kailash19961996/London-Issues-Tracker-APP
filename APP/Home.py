@@ -178,7 +178,7 @@ st.markdown("""
 
 st.markdown("""
 <div style='text-align: center;'>
-Hover over the red spots for more information
+Hover over the red spots for more info
 </div>
 """, unsafe_allow_html=True)
 
