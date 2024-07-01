@@ -52,20 +52,3 @@ This project heavily relies on two AI models to enhance its functionality:
 9. **Collaboration Features**: Add AI-powered recommendation systems to connect users working on similar urban issues.
 
 10. **Data Anonymization**: Implement AI techniques to ensure user privacy while maintaining data utility for analysis and reporting.
-
-## Getting Started
-
-[Include installation instructions, setup guide, and any necessary dependencies here]
-
-## Contributing
-
-We welcome contributions from developers, data scientists, and urban planners. Please read our [CONTRIBUTING.md](link-to-contributing-guide) for details on how to submit pull requests.
-
-## License
-
-This project is licensed under the [choose an appropriate license] - see the [LICENSE.md](link-to-license-file) file for details.
-
-## Acknowledgments
-
-- Thanks to all contributors and community members
-- Special thanks to [mention any specific organizations or individuals]
