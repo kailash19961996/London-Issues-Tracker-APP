@@ -19,7 +19,7 @@ st.markdown("""
 
 st.markdown("""
 <div style='text-align: center;'>
-    <h3> POWERED BY AI</h3>
+    <h4> < POWERED BY AI > </h4>
 </div>
 """, unsafe_allow_html=True)
 
