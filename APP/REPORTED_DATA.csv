@@ -5,7 +5,7 @@ timestamp,latitude,longitude,category,image_path,comment
 2024-10-11 08:15:37,51.5098,-0.1978,graffiti,REPORTED_IMAGES/graffiti7.jpg,Tags covering shop fronts in Notting Hill
 2024-02-28 13:49:50,51.5311,-0.1281,graffiti,REPORTED_IMAGES/graffiti8.jpg,Graffiti on playground equipment in Regent's Park
 
-2024-02-07 07:55:18,51.5180,-0.1292,garbage,REPORTED_IMAGES/garbage1.jpg,Overflowing bins on Oxford Street
+2024-02-07 07:55:18,45.5746,-121.1787,garbage,REPORTED_IMAGES/garbage1.jpg,Overflowing bins on Oxford Street
 2024-11-30 12:17:44,51.5142,-0.1494,garbage,REPORTED_IMAGES/garbage4.jpg,Discarded furniture blocking pavement in Mayfair
 2024-11-18 09:39:56,51.5074,-0.2384,garbage,REPORTED_IMAGES/garbage5.jpg,Overflowing public bin in Shepherd's Bush Green
 2024-11-02 17:22:31,51.5015,-0.1402,garbage,REPORTED_IMAGES/garbage6.jpg,Litter left after event in St. James's Park
@@ -14,7 +14,7 @@ timestamp,latitude,longitude,category,image_path,comment
 
 2024-01-25 13:29:47,51.5074,-0.1278,broken_window,REPORTED_IMAGES/window1.jpg,Broken shop window on Regent Street
 2024-04-18 16:55:03,51.5138,-0.0984,broken_window,REPORTED_IMAGES/window2.jpg,Smashed window at bus stop near Liverpool Street
-2024-07-03 09:12:36,51.5074,-0.1424,broken_window,REPORTED_IMAGES/window3.jpg,Cracked window pane in Piccadilly Circus station
+2024-07-03 09:12:36,45.5646,-121.1687,broken_window,REPORTED_IMAGES/window3.jpg,Cracked window pane in Piccadilly Circus station
 2024-10-22 18:40:59,51.5194,-0.1829,broken_window,REPORTED_IMAGES/window4.jpg,Broken window in residential building near Paddington
 2024-10-11 11:07:21,51.5033,-0.1196,broken_window,REPORTED_IMAGES/window5.jpg,Vandalized storefront window in Covent Garden
 2024-10-16 20:19:15,51.5173,-0.0878,broken_window,REPORTED_IMAGES/window7.jpg,Shattered window in office building in Shoreditch
@@ -22,7 +22,7 @@ timestamp,latitude,longitude,category,image_path,comment
 2024-11-25 18:36:41,51.4837,-0.1715,green_spaces,REPORTED_IMAGES/green3.jpg,Litter problem in Battersea Park
 2024-11-13 09:02:57,51.5287,-0.0818,green_spaces,REPORTED_IMAGES/green4.jpg,Vandalized trees in Victoria Park
 2024-01-06 13:29:24,51.4979,-0.1605,green_spaces,REPORTED_IMAGES/green5.jpg,Neglected community garden in Pimlico
-2024-11-30 16:55:49,51.4417,-0.2754,green_spaces,REPORTED_IMAGES/green6.jpg,Broken playground equipment in Richmond Park
+2024-11-30 16:55:49,45.5756,-121.1787,green_spaces,REPORTED_IMAGES/green6.jpg,Broken playground equipment in Richmond Park
 2024-07-11 11:21:12,51.5554,-0.1481,green_spaces,REPORTED_IMAGES/green7.jpg,Unauthorized campsite in Hampstead Heath
 2024-11-03 14:47:36,51.4858,-0.1303,green_spaces,REPORTED_IMAGES/green8.jpg,Dying trees in Kennington Park
 
