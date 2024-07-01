@@ -1,4 +1,5 @@
 import base64
+import time
 import streamlit as st
 
 def add_bg_from_local(image_file):
