@@ -8,6 +8,7 @@ import requests
 import pandas as pd
 import base64
 from io import BytesIO
+import pydeck as pdk
 from background import add_bg_from_local, show_gif_overlay
 
 add_bg_from_local('APP/background_images/whitebgs.jpg')
