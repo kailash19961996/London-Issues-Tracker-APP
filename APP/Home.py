@@ -132,7 +132,7 @@ if uploaded_file is not None:
                 
                 st.write(f"NOTE : As of now, the model is designed to detect only these 6 categories: ")
                 st.write(f"Graffiti, Garbage, Broken Window, Green Spaces, Public Buildings, Sports and Social events")
-                st.write(f"If you are not sure what to upload, download the same image below.")
+                st.write(f"If you are not sure what to upload, download the sample image below.")
                 st.markdown("""
                     <div style='text-align: center;'>
                     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
