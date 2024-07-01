@@ -6,7 +6,7 @@ The London Issues Tracker is an interactive platform designed to engage communit
 [Click here to try the app](https://neighbourhood-app.streamlit.app/)
 
 or scan the QR code
-![LIT_APP_QR_code](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/c4dc64e5-c367-4433-853d-d86f6dcd8238)
+![LIT_APP_QR_code_small](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/d45c8fef-8e41-48b8-a576-44524922b22c)
 
 ## Key Features
 
