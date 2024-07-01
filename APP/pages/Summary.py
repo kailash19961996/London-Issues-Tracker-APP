@@ -66,6 +66,12 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
+st.markdown("""
+<div style='text-align: center;'>
+    <h4> < POWERED BY AI > </h4>
+</div>
+""", unsafe_allow_html=True)
+
 st.write(f"Use Latest and powerful LLM's like GPT-4o to summarize this report")
 # Summarize comments
 if st.button('Summarize Comments'):
