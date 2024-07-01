@@ -144,7 +144,7 @@ if uploaded_file is not None:
         comment = st.text_input("Add a comment about the image:")
 
         if st.button('Submit Comment'):
-            add_bg_from_local('APP/background_images/stars.jpg')
+            add_bg_from_local('APP/background_images/stars.gif')
             # Get the timestamp
             timestamp = datetime.now()
             formatted_timestamp = timestamp.strftime('%Y-%m-%d %H:%M:%S')
