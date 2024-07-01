@@ -172,7 +172,7 @@ data = pd.read_csv('APP/REPORTED_DATA.csv', parse_dates=[0])
 
 st.markdown("""
 <div style='text-align: center;'>
-    <h2> Interactive Live Map </h2>
+    <h2>     Interactive Live Map </h2>
 </div>
 """, unsafe_allow_html=True)
 
