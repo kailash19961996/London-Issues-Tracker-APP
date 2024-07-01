@@ -62,7 +62,7 @@ def classify_image(image):
                 {
                     "role": "user",
                     "content": [
-                        {"type": "text", "text": "Classify this image mostly into one of the following categories: graffiti, garbage, broken_window, green_spaces, public_buildings, sports_and_social_events. If the image doesn't fit in the categories, only then suggest me different category. Respond with only the category name."},
+                        {"type": "text", "text": "Classify this image mostly into one of the following categories: graffiti, garbage, broken_window, green_spaces, public_buildings, sports_and_social_events, other. Respond with only the category name."},
                         {
                             "type": "image_url",
                             "image_url": {
