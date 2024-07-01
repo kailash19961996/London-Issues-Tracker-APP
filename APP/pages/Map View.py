@@ -26,7 +26,6 @@ def get_user_location():
 
 # Get the user's location
 current_latitude, current_longitude = get_user_location()
-
 fixed_latitude, fixed_longitude = 51.5130,-0.0897
 
 # Check if the data contains the required columns
@@ -60,7 +59,7 @@ tooltip = {
     }
 }
 
-view_state = pdk.ViewState(latitude=fixed_latitude, longitude=fixed_longitude, zoom=12)
+view_state = pdk.ViewState(latitude=current_latitude, longitude=current_longitude, zoom=12)
 r = pdk.Deck(layers=[layer], 
              initial_view_state=view_state, 
              tooltip=tooltip,
