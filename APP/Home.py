@@ -43,7 +43,7 @@ if not os.path.exists(images_dir):
     os.makedirs(images_dir)
 
 # CSV setup
-csv_path = "REPORTED_DATA.csv"
+csv_path = "APP/REPORTED_DATA.csv"
 if not os.path.exists(csv_path):
     with open(csv_path, 'w') as f:
         f.write("timestamp,latitude,longitude,category,image_path,comment\n")
@@ -112,7 +112,7 @@ if uploaded_file is not None:
     st.success(f'Classification : {category}')
     if category not in categories:
         # Sample image download button
-        sample_image_path = 'sample_image/graffiti.jpg'  # Path to your sample image
+        sample_image_path = 'APP/sample_image/graffiti.jpg'  # Path to your sample image
         if os.path.exists(sample_image_path):
             with open(sample_image_path, "rb") as file:
                 st.write(f"NOTE : As of now, the model is designed to detect only these 6 categories: GRAFFITI, GARBAGE, BROKEN WINDOW, GREEN SPACES, PUBLIC BUILDINGS, SPORTS AND SOCIAL EVENTS. If you are not sure what to upload, download the same image below, else, proceed with the commenting.")
