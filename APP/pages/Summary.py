@@ -75,9 +75,9 @@ st.markdown("""
 st.markdown("""
 <div style='text-align: center;'>
 Use Latest and powerful LLM's like GPT-4o to summarize this report
+            
 </div>
 """, unsafe_allow_html=True)
-
 
 # Summarize comments
 if st.button('Summarize Comments'):
