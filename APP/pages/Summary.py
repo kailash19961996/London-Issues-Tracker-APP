@@ -3,7 +3,7 @@ import pandas as pd
 import openai
 import os
 from background import add_bg_from_local
-
+from Home import openai.api_key
 add_bg_from_local('APP/background_images/whitebgs.jpg')
 
 # Set OpenAI API key
@@ -12,11 +12,11 @@ if api_key is None:
     raise ValueError("API key not found. Please set the OPENAI_API_KEY environment variable.")
 openai.api_key = api_key
 
-# Set OpenAI API key
-api_key = os.getenv('OPENAI_API_KEY')
-if api_key is None:
-    raise ValueError("API key not found. Please set the OPENAI_API_KEY environment variable.")
-openai.api_key = api_key
+# # Set OpenAI API key
+# api_key = os.getenv('OPENAI_API_KEY')
+# if api_key is None:
+#     raise ValueError("API key not found. Please set the OPENAI_API_KEY environment variable.")
+# openai.api_key = api_key
 
 # Load the provided CSV file
 file_path = 'REPORTED_DATA.csv'  # Update this path as necessary
