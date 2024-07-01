@@ -8,7 +8,7 @@ import requests
 import pandas as pd
 import base64
 from io import BytesIO
-from background import add_bg_from_local
+from background import add_bg_from_local, show_gif_overlay
 
 add_bg_from_local('APP/background_images/whitebgs.jpg')
 
@@ -100,26 +100,6 @@ def get_user_location():
 def save_image_data(timestamp, latitude, longitude, image_path, category, comment):
     with open(csv_path, 'a') as f:
         f.write(f"{timestamp},{latitude},{longitude},{category},{image_path},{comment}\n")
-
-def show_gif_overlay(gif_path, duration):
-    gif_html = f"""
-        <style>
-        .gif-overlay {{
-            position: fixed;
-            top: 75%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 9999;
-        }}
-        </style>
-        <div class="gif-overlay">
-            <img src="data:image/gif;base64,{base64.b64encode(open(gif_path, "rb").read()).decode()}" alt="Overlay GIF">
-        </div>
-    """
-    overlay_placeholder = st.empty()
-    overlay_placeholder.markdown(gif_html, unsafe_allow_html=True)
-    time.sleep(duration)
-    overlay_placeholder.empty()
 
 w_size = 250
 h_size = 250

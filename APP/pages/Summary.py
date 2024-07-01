@@ -2,8 +2,9 @@ import streamlit as st
 import pandas as pd
 import openai
 import os
-from background import add_bg_from_local
+from background import add_bg_from_local, show_gif_overlay
 from Home import api_key
+
 add_bg_from_local('APP/background_images/whitebgs.jpg')
 
 openai.api_key = api_key
@@ -93,6 +94,7 @@ st.markdown("""
 # Summarize comments
 if st.button('Summarize Comments'):
     summaries = summarize_comments(df)
+    show_gif_overlay('APP/background_images/stars.gif', duration=8)
     st.markdown(summaries)
 
 # Display the dataframe to inspect the columns

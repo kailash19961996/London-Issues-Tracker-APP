@@ -15,3 +15,23 @@ def add_bg_from_local(image_file):
     """,
     unsafe_allow_html=True
     )
+
+def show_gif_overlay(gif_path, duration):
+    gif_html = f"""
+        <style>
+        .gif-overlay {{
+            position: fixed;
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+        }}
+        </style>
+        <div class="gif-overlay">
+            <img src="data:image/gif;base64,{base64.b64encode(open(gif_path, "rb").read()).decode()}" alt="Overlay GIF">
+        </div>
+    """
+    overlay_placeholder = st.empty()
+    overlay_placeholder.markdown(gif_html, unsafe_allow_html=True)
+    time.sleep(duration)
+    overlay_placeholder.empty()
