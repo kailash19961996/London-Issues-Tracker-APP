@@ -117,7 +117,7 @@ if uploaded_file is not None:
             with open(sample_image_path, "rb") as file:
                 st.write(f"NOTE : As of now, the model is designed to detect only these 6 categories: ")
                 st.write(f"Graffiti, Garbage, Broken Window, Green Spaces, Public Buildings, Sports and Social events")
-                st.write(f"If you are not sure what to upload, download the same image below, else, proceed with the commenting.")
+                st.write(f"If you are not sure what to upload, download the same image below.")
                 btn = st.download_button(
                     label="Download a sample image",
                     data=file,
