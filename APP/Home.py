@@ -2,7 +2,6 @@ import streamlit as st
 import os
 from datetime import datetime
 from PIL import Image
-from transformers import CLIPProcessor, CLIPModel
 import openai
 import requests
 import pandas as pd
