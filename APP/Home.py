@@ -24,7 +24,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # File uploader
-uploaded_file = st.file_uploader("Choose an image...", type=['png', 'jpg', 'jpeg'])
+uploaded_file = st.file_uploader("Choose an image...", type=['png', 'jpg', 'jpeg', 'webp'])
 
 # Set OpenAI API key
 api_key = st.secrets["openai"]["api_key"]
