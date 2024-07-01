@@ -59,7 +59,7 @@ tooltip = {
     }
 }
 
-view_state = pdk.ViewState(latitude=current_latitude, longitude=current_longitude, zoom=12)
+view_state = pdk.ViewState(latitude=fixed_latitude, longitude=fixed_longitude, zoom=12)
 r = pdk.Deck(layers=[layer], 
              initial_view_state=view_state, 
              tooltip=tooltip,
@@ -67,7 +67,8 @@ r = pdk.Deck(layers=[layer],
 st.pydeck_chart(r)
 
 # Display the user's location
-st.write(f"Your location is: Latitude: {current_latitude}, Longitude: {current_longitude}")
+st.write(f"Your current location is: Latitude: {current_latitude}, Longitude: {current_longitude}")
+st.write(f"NOTE: The location is identified based on the IP address, since steamlit servers are located at Dalles, Oregon, United States, you will find the current location to be wrong.")
 
 # Display the dataframe to inspect the columns
 st.markdown("""
