@@ -4,7 +4,7 @@ import streamlit as st
 from datetime import datetime
 from background import add_bg_from_local
 
-add_bg_from_local('background_images/background.gif')
+add_bg_from_local('APP/background_images/background.gif')
 
 # Streamlit app
 st.title('Comments Over Time by Category')
