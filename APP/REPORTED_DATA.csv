@@ -14,7 +14,7 @@ timestamp,latitude,longitude,category,image_path,comment
 
 2024-01-25 13:29:47,51.5074,-0.1278,broken_window,REPORTED_IMAGES/window1.jpg,Broken shop window on Regent Street
 2024-04-18 16:55:03,51.5138,-0.0984,broken_window,REPORTED_IMAGES/window2.jpg,Smashed window at bus stop near Liverpool Street
-2024-07-03 09:12:36,45.6046,-121.1687,broken_window,REPORTED_IMAGES/window3.jpg,Cracked window pane in Piccadilly Circus station
+2024-07-03 09:12:36,45.6100,-121.1687,broken_window,REPORTED_IMAGES/window3.jpg,Cracked window pane in Piccadilly Circus station
 2024-10-22 18:40:59,51.5194,-0.1829,broken_window,REPORTED_IMAGES/window4.jpg,Broken window in residential building near Paddington
 2024-10-11 11:07:21,51.5033,-0.1196,broken_window,REPORTED_IMAGES/window5.jpg,Vandalized storefront window in Covent Garden
 2024-10-16 20:19:15,51.5173,-0.0878,broken_window,REPORTED_IMAGES/window7.jpg,Shattered window in office building in Shoreditch
