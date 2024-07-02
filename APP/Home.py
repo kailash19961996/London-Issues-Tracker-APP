@@ -13,11 +13,15 @@ from background import add_bg_from_local, show_gif_overlay
 
 add_bg_from_local('APP/background_images/whitebgs.jpg')
 
-st.markdown("""
-<div style='text-align: center;'>
-    <h2>🏠 What's happening in Neighbourhood ⛯</h2>
-</div>
-""", unsafe_allow_html=True)
+logo = Image.open("APP/background_images/logo_wihtout_background.png")
+
+# Create columns to align the logo left of the title
+col1, col2 = st.columns([1, 5])
+
+with col1:
+    st.image(logo, width=100)  # Adjust width as needed
+with col2:
+    st.title("London Issue Tracker")
 
 st.markdown("""
 <div style='text-align: center;'>
