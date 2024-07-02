@@ -91,14 +91,14 @@ def classify_image(image):
         return None
     
 
-# Function to get user's location based on IP address
-def get_user_location():
-    response = requests.get("https://ipinfo.io")
-    data = response.json()
-    location = data['loc'].split(',')
-    latitude = float(location[0])
-    longitude = float(location[1])
-    return latitude, longitude
+# # Function to get user's location based on IP address
+# def get_user_location():
+#     response = requests.get("https://ipinfo.io")
+#     data = response.json()
+#     location = data['loc'].split(',')
+#     latitude = float(location[0])
+#     longitude = float(location[1])
+#     return latitude, longitude
 
 # Function to save image data to CSV
 def save_image_data(timestamp, latitude, longitude, image_path, category, comment):
@@ -152,24 +152,23 @@ if uploaded_file is not None:
         comment = st.text_input("Add a comment about the image:")
 
         if st.button('Submit Comment'):
-            show_gif_overlay('APP/background_images/stars.gif', duration=5.5)
+            # show_gif_overlay('APP/background_images/stars.gif', duration=5.5)
             # Get the timestamp
             timestamp = datetime.now()
             formatted_timestamp = timestamp.strftime('%Y-%m-%d %H:%M:%S')
 
             # Get and save the user's location
             # latitude, longitude = get_user_location()
-
-            address = st.text_input("Enter your PIN code:")
-            latitude, longitude = get_geolocation(address)
-            if latitude and longitude:
-                st.success(f"Latitude: {latitude}, Longitude: {longitude}")
-            else:
-                st.error("Could not find geolocation for the provided address. Please check your pin code again")
-                
-            st.write(f"Your location is: Latitude: {latitude}, Longitude: {longitude}")
             
             if comment:
+                address = st.text_input("Enter your PIN code:")
+                latitude, longitude = get_geolocation(address)
+                if latitude and longitude:
+                    st.success(f"Latitude: {latitude}, Longitude: {longitude}")
+                else:
+                    st.error("Could not find geolocation for the provided address. Please check your pin code again")
+                st.write(f"Your location is: Latitude: {latitude}, Longitude: {longitude}")
+
                 # Remove all commas from the comment
                 sanitized_comment = comment.replace(',', '')
                 # Save the image
