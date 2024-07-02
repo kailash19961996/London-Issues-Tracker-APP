@@ -12,9 +12,9 @@ or scan the QR code
 ## Key Features
 
 1. **Home Page**: Users can upload images and comments about urban issues they encounter and see them updated in real-time on interactive maps, which are also visible to other users.
-![Screenshot 2024-07-02 at 12 12 29 AM](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/2a60e017-ee6c-4ca4-a056-002c9ab449c1)
-![Screenshot 2024-07-02 at 12 12 51 AM](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/ddacccd0-2028-471b-add5-731e4df28044)
-![Screenshot 2024-07-02 at 12 13 32 AM](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/d9e89235-1488-4eea-bcf7-d1a949c08901)
+![Screenshot 2024-07-02 at 1 28 02 AM](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/3e19918a-8531-4cc9-8c6a-86be49965f80)
+![Screenshot 2024-07-02 at 1 28 42 AM](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/dc3bd5ab-2d8d-45ba-827e-45fa5259b478)
+![Screenshot 2024-07-02 at 1 29 18 AM](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/def7ef54-58e3-40da-a4ae-16394c7317d2)
 
 2. **Reports**: Provides graphical representations of issue trends over time, helping track progress and hold authorities accountable.
 ![Screenshot 2024-07-02 at 12 13 48 AM](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/489f52aa-22e4-4c00-a5d9-dfeb24cb38f2)
