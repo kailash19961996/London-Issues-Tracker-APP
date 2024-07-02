@@ -1,5 +1,5 @@
 # London Issues Tracker
-<img width="375" alt="Logo" src="https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/12ab76a0-4203-44c2-b122-f333594099dc">
+![Logo](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/24542a00-8615-4e99-b3fb-966d70180285)
 
 ## Project Overview
 The London Issues Tracker is an interactive platform designed to engage community members and policymakers in addressing key urban challenges. This project, developed for a hackathon organized by '[Future House](https://futurehouse.uk/)' with contributions from policymakers and tech enthusiasts, leverages artificial intelligence to efficiently process and analyze user-submitted reports, providing valuable insights into urban issues.
@@ -7,7 +7,7 @@ The London Issues Tracker is an interactive platform designed to engage communit
 [Click here to try the app](https://neighbourhood-app.streamlit.app/)
 
 or scan the QR code
-![LIT_QR_code](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/e93a1d94-0df2-4f04-83ea-caa6d95d0a1d)
+![QR_code](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/a24814e5-9478-46fc-98c0-198e4183e5f1)
 
 ## Key Features
 
