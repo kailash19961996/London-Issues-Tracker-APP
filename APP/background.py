@@ -1,6 +1,7 @@
 import base64
 import time
 import streamlit as st
+from geopy.geocoders import Nominatim
 
 def add_bg_from_local(image_file):
     with open(image_file, "rb") as image_file:
@@ -36,3 +37,12 @@ def show_gif_overlay(gif_path, duration):
     overlay_placeholder.markdown(gif_html, unsafe_allow_html=True)
     time.sleep(duration)
     overlay_placeholder.empty()
+
+# Function to get geolocation data
+def get_geolocation(address):
+    geolocator = Nominatim(user_agent="geoapiExercises")
+    location = geolocator.geocode(address)
+    if location:
+        return location.latitude, location.longitude
+    else:
+        return None, None
