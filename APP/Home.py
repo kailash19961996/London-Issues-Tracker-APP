@@ -9,7 +9,7 @@ import pandas as pd
 import base64
 from io import BytesIO
 import pydeck as pdk
-from background import add_bg_from_local, show_gif_overlay
+from background import add_bg_from_local, show_gif_overlay, get_geolocation
 
 add_bg_from_local('APP/background_images/whitebgs.jpg')
 
@@ -152,14 +152,23 @@ if uploaded_file is not None:
         comment = st.text_input("Add a comment about the image:")
 
         if st.button('Submit Comment'):
-            show_gif_overlay('APP/background_images/stars.gif', duration=8)
+            show_gif_overlay('APP/background_images/stars.gif', duration=5.5)
             # Get the timestamp
             timestamp = datetime.now()
             formatted_timestamp = timestamp.strftime('%Y-%m-%d %H:%M:%S')
 
             # Get and save the user's location
-            latitude, longitude = get_user_location()
+            # latitude, longitude = get_user_location()
+
+            address = st.text_input("Enter your PIN code:")
+            latitude, longitude = get_geolocation(address)
+            if latitude and longitude:
+                st.success(f"Latitude: {latitude}, Longitude: {longitude}")
+            else:
+                st.error("Could not find geolocation for the provided address. Please check your pin code again")
+                
             st.write(f"Your location is: Latitude: {latitude}, Longitude: {longitude}")
+            
             if comment:
                 # Remove all commas from the comment
                 sanitized_comment = comment.replace(',', '')
@@ -187,8 +196,8 @@ Hover over the red spots for more info
 """, unsafe_allow_html=True)
 
 # Get the user's location
-current_latitude, current_longitude = get_user_location()
-fixed_latitude, fixed_longitude = 51.5130,-0.0897
+# current_latitude, current_longitude = get_user_location()
+# fixed_latitude, fixed_longitude = 51.5130,-0.0897
 
 # Check if the data contains the required columns
 if 'latitude' in data.columns and 'longitude' in data.columns:
@@ -218,7 +227,7 @@ tooltip = {
     }
 }
 
-view_state = pdk.ViewState(latitude=current_latitude, longitude=current_longitude, zoom=12)
+view_state = pdk.ViewState(latitude=latitude, longitude=longitude, zoom=12)
 r = pdk.Deck(layers=[layer], 
              initial_view_state=view_state, 
              tooltip=tooltip,
