@@ -23,6 +23,10 @@ with col1:
 with col2:
     st.title("London Issue Tracker")
 
+st.sidebar.page_link("pages/Graph View.py", label="graph view", icon="👋")
+st.sidebar.page_link("pages/Map View.py", label="map view", icon="👋")
+st.sidebar.page_link("pages/Summary.py", label="summary", icon="👋")
+
 st.markdown("""
 <div style='text-align: center;'>
     <h4> < POWERED BY AI > </h4>
