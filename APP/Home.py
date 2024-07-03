@@ -138,6 +138,21 @@ if uploaded_file is not None:
                 st.error('Please add a comment and enter your address before submitting.')
 
 st.markdown("""
+    <style>
+    .centered {
+        text-align: center;
+        margin: 0 auto;
+    }
+    </style>
+    <div class="centered">
+        <h2>Interactive Live Map</h2>
+    </div>
+    <div class="centered">
+        Hover over the red spots for more info
+    </div>
+    """, unsafe_allow_html=True)
+
+st.markdown("""
 <div style='text-align: center;'>
     <h2>     Interactive Live Map </h2>
 </div>
