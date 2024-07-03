@@ -11,6 +11,10 @@ from io import BytesIO
 add_bg_from_local('APP/background_images/whitebgs.jpg')
 
 openai.api_key = api_key
+logo = Image.open("APP/background_images/logo_wihtout_background.png")
+buffered = BytesIO()
+logo.save(buffered, format="PNG")
+logo_base64 = base64.b64encode(buffered.getvalue()).decode()
 
 # Load the provided CSV file
 file_path = 'APP/REPORTED_DATA.csv'
