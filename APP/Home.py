@@ -36,7 +36,7 @@ with col2:
 
 st.markdown("""
 <div style='text-align: center;'>
-     The app allows users to report, view, and track urban issues in real-time, helping to improve community spaces through AI-driven insights.
+     "The app allows users to report, view, and track urban issues in real-time, helping to improve community spaces through AI-driven insights."
 </div>
 """, unsafe_allow_html=True)
 
