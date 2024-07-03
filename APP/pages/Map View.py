@@ -12,6 +12,12 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
+st.markdown("""
+<div style='text-align: center;'>
+"Real-time interactive maps display user-reported urban issues, providing a clear visualization of local challenges."        
+</div>
+""", unsafe_allow_html=True)
+
 latitude, longitude = 51.5074456, -0.1277653 # London
 if 'latitude' not in st.session_state:
     st.session_state.latitude = latitude

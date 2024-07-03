@@ -8,6 +8,11 @@ add_bg_from_local('APP/background_images/background.gif')
 
 # Streamlit app
 st.title('Comments Over Time by Category')
+st.markdown("""
+<div style='text-align: center;'>
+"Graphical representations track issue trends over time, helping monitor progress and accountability."        
+</div>
+""", unsafe_allow_html=True)
 
 # Load the provided CSV file
 file_path = 'APP/REPORTED_DATA.csv'  # Update this path as necessary
