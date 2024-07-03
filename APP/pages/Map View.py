@@ -36,8 +36,7 @@ if submit_button:
             # Store the latitude and longitude in session state
             st.session_state.latitude = latitude
             st.session_state.longitude = longitude
-            st.success(f"Latitude: {latitude}, Longitude: {longitude}")
-            st.info(f"Area Name: {area_name}")
+            st.info(f"Latitude: {latitude}, Longitude: {longitude}, Area Name: {area_name}")
         else:
             st.error("Could not find geolocation for the provided address. Please check your PINCODE again")
     else:
