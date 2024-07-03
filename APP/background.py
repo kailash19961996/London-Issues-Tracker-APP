@@ -7,12 +7,10 @@ import openai
 import os
 
 # # OpenAI API key
-# api_key = api_key = os.getenv("OPENAI_API_KEY")
-# if api_key is None:
-#     raise ValueError("API key not found. Please set the OPENAI_API_KEY environment variable.")
-# openai.api_key = api_key
-
-openai.api_key = "sk-proj-QEILEClKpePgBokbgaKCT3BlbkFJiHsWVysvAeoXKOHtvcfn"
+api_key = api_key = os.getenv("OPENAI_API_KEY")
+if api_key is None:
+    raise ValueError("API key not found. Please set the OPENAI_API_KEY environment variable.")
+openai.api_key = api_key
 
 def add_bg_from_local(image_file):
     with open(image_file, "rb") as image_file:
