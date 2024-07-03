@@ -70,6 +70,15 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
+st.markdown("""
+    <style>
+    .stButton {
+        display: flex;
+        justify-content: center;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
 
 # Summarize comments
 if st.button('Summarize Comments'):
