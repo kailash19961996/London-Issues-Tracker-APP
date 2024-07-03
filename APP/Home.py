@@ -7,6 +7,7 @@ import openai
 import requests
 import pandas as pd
 import base64
+from io import BytesIO
 import pydeck as pdk
 from background import add_bg_from_local, show_gif_overlay, get_geolocation, classify_image
 
@@ -17,7 +18,36 @@ if api_key is None:
 openai.api_key = api_key
 
 add_bg_from_local('APP/background_images/whitebgs.jpg')
+
 logo = Image.open("APP/background_images/logo_wihtout_background.png")
+buffered = BytesIO()
+logo.save(buffered, format="PNG")
+logo_base64 = base64.b64encode(buffered.getvalue()).decode()
+
+# CSS to center the logo and title
+st.markdown(f"""
+    <style>
+    .centered {{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }}
+    .centered img {{
+        width: 100px;
+    }}
+    </style>
+    <div class="centered">
+        <img src="data:image/png;base64,{logo_base64}" alt="Logo">
+        <h1>London Issue Tracker</h1>
+    </div>
+    """, unsafe_allow_html=True)
+
+st.markdown("""
+<div style='text-align: center;'>
+     "The app allows users to report, view, and track urban issues in real-time, helping to improve community spaces through AI-driven insights."
+</div>
+""", unsafe_allow_html=True)
 
 latitude, longitude = 51.5074456, -0.1277653 # London
 # Initialize session state for latitude and longitude if not already done
@@ -25,27 +55,6 @@ if 'latitude' not in st.session_state:
     st.session_state.latitude = latitude
 if 'longitude' not in st.session_state:
     st.session_state.longitude = longitude
-
-# Create columns to align the logo left of the title
-col1, col2 = st.columns([1, 5])
-with col1:
-    st.image(logo, width=100)
-with col2:
-    st.title("London Issue Tracker")
-
-# Center the logo and title
-st.markdown("""
-    <div style='text-align: center;'>
-        <img src='data:image/png;base64,{}' width='100'/>
-        <h1>London Issue Tracker</h1>
-    </div>
-    """.format(base64.b64encode(logo.tobytes()).decode()), unsafe_allow_html=True)
-
-st.markdown("""
-<div style='text-align: center;'>
-     "The app allows users to report, view, and track urban issues in real-time, helping to improve community spaces through AI-driven insights."
-</div>
-""", unsafe_allow_html=True)
 
 # File uploader
 uploaded_file = st.file_uploader("Start by uploading an image...", type=['png', 'jpg', 'jpeg', 'webp', 'heic'])
