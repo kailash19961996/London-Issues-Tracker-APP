@@ -164,7 +164,7 @@ tooltip = {
     }
 }
 
-view_state = pdk.ViewState(latitude=latitude, longitude=longitude, zoom=12)
+view_state = pdk.ViewState(latitude=latitude, longitude=longitude, zoom=13)
 r = pdk.Deck(layers=[layer],
              initial_view_state=view_state,
              tooltip=tooltip,
