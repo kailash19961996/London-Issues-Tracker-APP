@@ -156,7 +156,7 @@ layer = pdk.Layer(
 )
 
 tooltip = {
-    "html": "<b>Category:</b> {category} <br/><b>Comment:</b> {comment}<b>Report Time:</b> {timestamp[:8]} <br/>",
+    "html": "<b>Category:</b> {category} <br/><b>Comment:</b> {comment}<br/><b>Report Time:</b> {timestamp[:8]} <br/>",
     "style": {
         "backgroundColor": "steelblue",
         "color": "white",
