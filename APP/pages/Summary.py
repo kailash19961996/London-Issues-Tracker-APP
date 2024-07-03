@@ -56,13 +56,23 @@ def summarize_comments(df):
     
     return summary_text
 
-logo = Image.open("APP/background_images/logo_wihtout_background.png")
-# Create columns to align the logo left of the title
-col1, col2 = st.columns([1, 5])
-with col1:
-    st.image(logo, width=100)
-with col2:
-    st.title("Summary by Category")
+st.markdown(f"""
+    <style>
+    .centered {{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }}
+    .centered img {{
+        width: 100px;
+    }}
+    </style>
+    <div class="centered">
+        <img src="data:image/png;base64,{logo_base64}" alt="Logo">
+        <h1>Summary by Category</h1>
+    </div>
+    """, unsafe_allow_html=True)
 
 st.markdown("""
 <div style='text-align: center;'>
