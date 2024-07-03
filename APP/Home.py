@@ -104,12 +104,13 @@ if uploaded_file is not None:
             if comment and address:
                 timestamp = datetime.now()
                 formatted_timestamp = timestamp.strftime('%Y-%m-%d %H:%M:%S')
-                latitude, longitude = get_geolocation(address)
+                latitude, longitude, area_name = get_geolocation(address)
                 if latitude is not None and longitude is not None:
                     # Store the latitude and longitude in session state
                     st.session_state.latitude = latitude
                     st.session_state.longitude = longitude
-                    st.write(f"Your location is: Latitude: {latitude}, Longitude: {longitude}")
+                    st.success(f"Latitude: {latitude}, Longitude: {longitude}")
+                    st.info(f"Area Name: {area_name}")
                     sanitized_comment = comment.replace(',', '')  # Remove all commas from the comment
                     image.save(image_path)
                     save_image_data(formatted_timestamp, latitude, longitude, image_path, category, sanitized_comment)

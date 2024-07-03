@@ -47,20 +47,20 @@ def show_gif_overlay(gif_path, duration):
     time.sleep(duration)
     overlay_placeholder.empty()
 
-# Function to get geolocation data
 def get_geolocation(address):
-    key = 'e14c2a19f39146c4be104fe2f2289369'
+    key = 'e14c2a19f39146c4be104fe2f2289369'  # Replace with your OpenCage API key
     geocoder = OpenCageGeocode(key)
     try:
         result = geocoder.geocode(address)
         if result and len(result):
             location = result[0]['geometry']
-            return location['lat'], location['lng']
+            area_name = result[0]['formatted']
+            return location['lat'], location['lng'], area_name
         else:
-            return None, None
+            return None, None, None
     except Exception as e:
         st.error(f"Geocoding service error: {e}")
-        return None, None
+        return None, None, None
     
 
 # Function to classify image
