@@ -97,7 +97,7 @@ if uploaded_file is not None:
     else:
         with st.form(key='report_form'):
             comment = st.text_input("Add a comment about the image:")
-            address = st.text_input("Enter your PINCODE:")
+            address = st.text_input("Enter your PINCODE or street name or city:")
             submit_button = st.form_submit_button(label='Submit')
 
         if submit_button:
@@ -117,9 +117,9 @@ if uploaded_file is not None:
                     st.success('Thanks for reporting your thoughts, we will look into it.')
                     show_gif_overlay('APP/background_images/stars2.gif', duration=3)
                 else:
-                    st.error("Could not find geolocation for the provided address. Please check your PINCODE again")
+                    st.error("Could not find geolocation for the provided address. Please check your address again")
             else:
-                st.error('Please add a comment and enter your PINCODE before submitting.')
+                st.error('Please add a comment and enter your address before submitting.')
 
 st.markdown("""
 <div style='text-align: center;'>
@@ -139,8 +139,8 @@ data = pd.read_csv('APP/REPORTED_DATA.csv', parse_dates=[0])
 # Check if the data contains the required columns
 if 'latitude' in data.columns and 'longitude' in data.columns:
     # Create a new dataframe for the map
-    map_data = data[['latitude', 'longitude', 'category', 'comment']]
-    map_data.columns = ['lat', 'lon', 'category', 'comment']
+    map_data = data[['latitude', 'longitude', 'category', 'comment', 'timestamp']]
+    map_data.columns = ['lat', 'lon', 'category', 'comment', 'timestamp']
 else:
     st.write("The CSV file does not contain 'latitude' and 'longitude' columns.")
 
