@@ -11,6 +11,9 @@ from io import BytesIO
 add_bg_from_local('APP/background_images/background.gif')
 
 logo = Image.open("APP/background_images/logo_wihtout_background.png")
+buffered = BytesIO()
+logo.save(buffered, format="PNG")
+logo_base64 = base64.b64encode(buffered.getvalue()).decode()
 
 st.markdown(f"""
     <style>
