@@ -147,7 +147,6 @@ st.markdown("""
     </style>
     <div class="centered">
         <h2>Interactive Live Map</h2>
-        Hover over the markers for details
     </div>
     <div class="centered">
         Hover over the markers for details
