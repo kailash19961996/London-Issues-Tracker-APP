@@ -31,11 +31,11 @@ with st.form(key='report_form'):
             submit_button = st.form_submit_button(label='Submit')
 if submit_button:
     if address:
-        lat, lon, area_name = get_geolocation(address)
+        latitude, longitude, area_name = get_geolocation(address)
         if latitude is not None and longitude is not None:
             # Store the latitude and longitude in session state
-            st.session_state.latitude = lat
-            st.session_state.longitude = lon
+            st.session_state.latitude = latitude
+            st.session_state.longitude = longitude
             st.success(f"Latitude: {latitude}, Longitude: {longitude}")
             st.info(f"Area Name: {area_name}")
         else:
