@@ -141,6 +141,7 @@ if 'latitude' in data.columns and 'longitude' in data.columns:
     # Create a new dataframe for the map
     map_data = data[[ 'timestamp', 'latitude', 'longitude', 'category', 'comment']]
     map_data.columns = ['timestamp', 'lat', 'lon', 'category', 'comment']
+    map_data['timestamp'] = map_data['timestamp'].astype(str)
 else:
     st.write("The CSV file does not contain 'latitude' and 'longitude' columns.")
 
