@@ -35,7 +35,7 @@ st.markdown(f"""
 
 st.markdown("""
 <div style='text-align: center;'>
-"Real-time interactive maps display user-reported urban issues, providing a clear visualization of local challenges."        
+<i>"Real-time interactive maps display user-reported urban issues, providing a clear visualization of local challenges."<i>      
 </div>
 """, unsafe_allow_html=True)
 
