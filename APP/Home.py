@@ -46,7 +46,7 @@ st.markdown(f"""
 
 st.markdown("""
 <div style='text-align: center;'>
-     "The app allows users to report, view, and track urban issues in real-time, helping to improve community spaces through AI-driven insights."
+     <i>"The app allows users to report, view, and track urban issues in real-time, helping to improve community spaces through AI-driven insights."<i>
 </div>
 """, unsafe_allow_html=True)
 
@@ -149,7 +149,7 @@ st.markdown("""
         <h2>Interactive Live Map</h2>
     </div>
     <div class="centered">
-        Hover over the markers for details
+        <i>Hover over the markers for details<i>
     </div>
     """, unsafe_allow_html=True)
 
