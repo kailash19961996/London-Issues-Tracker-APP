@@ -40,7 +40,7 @@ st.markdown(f"""
     <div class="centered">
         <img src="data:image/png;base64,{logo_base64}" alt="Logo">
         <h1>London Issue Tracker</h1>
-        <h3>POWERED BY AI</h3>
+        <h3><i>POWERED BY AI<i></h3>
     </div>
     """, unsafe_allow_html=True)
 
