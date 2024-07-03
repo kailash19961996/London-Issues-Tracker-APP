@@ -38,7 +38,6 @@ if submit_button:
             st.session_state.longitude = longitude
             st.success(f"Latitude: {latitude}, Longitude: {longitude}")
             st.info(f"Area Name: {area_name}")
-            show_gif_overlay('APP/background_images/stars2.gif', duration=2.2)
         else:
             st.error("Could not find geolocation for the provided address. Please check your PINCODE again")
     else:
