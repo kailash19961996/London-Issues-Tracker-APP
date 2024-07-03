@@ -4,6 +4,7 @@ import openai
 import os
 from background import add_bg_from_local, show_gif_overlay
 from Home import api_key
+from PIL import Image
 
 add_bg_from_local('APP/background_images/whitebgs.jpg')
 
@@ -55,11 +56,13 @@ def summarize_comments(df):
     
     return summary_text
 
-st.markdown("""
-<div style='text-align: center;'>
-    <h1> Summary by Category </h1>
-</div>
-""", unsafe_allow_html=True)
+logo = Image.open("APP/background_images/logo_wihtout_background.png")
+# Create columns to align the logo left of the title
+col1, col2 = st.columns([1, 5])
+with col1:
+    st.image(logo, width=100)
+with col2:
+    st.title("Summary by Category")
 
 st.markdown("""
 <div style='text-align: center;'>
