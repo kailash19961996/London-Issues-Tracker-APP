@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import requests
 import pydeck as pdk
-from background import add_bg_from_local, get_geolocation
+from background import add_bg_from_local, get_geolocation, show_gif_overlay
 
 add_bg_from_local('APP/background_images/background.gif')
 
@@ -13,7 +13,6 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 latitude, longitude = 51.5074456, -0.1277653 # London
-# Initialize session state for latitude and longitude if not already done
 if 'latitude' not in st.session_state:
     st.session_state.latitude = latitude
 if 'longitude' not in st.session_state:
@@ -32,12 +31,14 @@ with st.form(key='report_form'):
             submit_button = st.form_submit_button(label='Submit')
 if submit_button:
     if address:
-        latitude, longitude = get_geolocation(address)
+        latitude, longitude, area_name = get_geolocation(address)
         if latitude is not None and longitude is not None:
             # Store the latitude and longitude in session state
             st.session_state.latitude = latitude
             st.session_state.longitude = longitude
-            st.write(f"Your location is: Latitude: {latitude}, Longitude: {longitude}")
+            st.success(f"Latitude: {latitude}, Longitude: {longitude}")
+            st.info(f"Area Name: {area_name}")
+            show_gif_overlay('APP/background_images/stars2.gif', duration=3)
         else:
             st.error("Could not find geolocation for the provided address. Please check your PINCODE again")
     else:

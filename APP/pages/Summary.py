@@ -10,16 +10,10 @@ add_bg_from_local('APP/background_images/whitebgs.jpg')
 openai.api_key = api_key
 
 # Load the provided CSV file
-file_path = 'APP/REPORTED_DATA.csv'  # Update this path as necessary
+file_path = 'APP/REPORTED_DATA.csv'
 df = pd.read_csv(file_path)
-
-# Clean the timestamp column
 df['timestamp'] = df['timestamp'].str.extract(r'(^[\d\-:\s\.]+)').dropna()
-
-# Convert the timestamp column to datetime
 df['timestamp'] = pd.to_datetime(df['timestamp'], format='%Y-%m-%d %H:%M:%S', errors='coerce')
-
-# Set timestamp as index
 df.set_index('timestamp', inplace=True)
 
 # Function to summarize comments
