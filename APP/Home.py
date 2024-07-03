@@ -39,9 +39,9 @@ st.markdown(f"""
     </style>
     <div class="centered">
         <img src="data:image/png;base64,{logo_base64}" alt="Logo">
-        AI POWERED
+        
         <h1>AI London Issue Tracker</h1>
-        POWERED BY AI
+        
     </div>
     """, unsafe_allow_html=True)
 
