@@ -148,7 +148,7 @@ st.markdown("""
         <h2>Interactive Live Map</h2>
     </div>
     <div class="centered">
-        Hover over the red spots for more information
+        Hover over the markers for details
     </div>
     """, unsafe_allow_html=True)
 
