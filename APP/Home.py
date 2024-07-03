@@ -115,7 +115,7 @@ if uploaded_file is not None:
                     image.save(image_path)
                     save_image_data(formatted_timestamp, latitude, longitude, image_path, category, sanitized_comment)
                     st.success('Thanks for reporting your thoughts, we will look into it.')
-                    show_gif_overlay('APP/background_images/stars2.gif', duration=5)
+                    show_gif_overlay('APP/background_images/stars2.gif', duration=3)
                 else:
                     st.error("Could not find geolocation for the provided address. Please check your PINCODE again")
             else:
