@@ -15,15 +15,15 @@ or scan the QR code
 ![Screenshot 2024-07-03 at 4 20 41 AM](https://github.com/kailash19961996/London-Issues-Tracker-APP/assets/123597753/ef63a7b3-8532-4833-9ea2-9138690a8995)
 ![Screenshot 2024-07-03 at 4 21 14 AM](https://github.com/kailash19961996/London-Issues-Tracker-APP/assets/123597753/57ce48e2-8948-420c-8bd2-b98c0e49f0c4)
 ![Screenshot 2024-07-03 at 4 22 15 AM](https://github.com/kailash19961996/London-Issues-Tracker-APP/assets/123597753/4f611b7b-af3b-4205-8308-88eef830e28a)
-![Screenshot 2024-07-03 at 4 22 52 AM](https://github.com/kailash19961996/London-Issues-Tracker-APP/assets/123597753/ce67a98e-2e76-4299-8d40-f169f990b67c)
+![Screenshot 2024-07-03 at 4 27 39 AM](https://github.com/kailash19961996/London-Issues-Tracker-APP/assets/123597753/5fc6ce1b-ec51-4f80-b05e-2c9f77823767)
 
-2. **Reports**: Provides graphical representations of issue trends over time, helping track progress and hold authorities accountable.
+3. **Reports**: Provides graphical representations of issue trends over time, helping track progress and hold authorities accountable.
 ![Screenshot 2024-07-03 at 4 23 10 AM](https://github.com/kailash19961996/London-Issues-Tracker-APP/assets/123597753/a266afc0-04ec-48af-a457-36501566dccb)
 
-3. **Interactive Maps**: Real-time visualization of reported issues, allowing users and policymakers to see what's happening in their area.
+4. **Interactive Maps**: Real-time visualization of reported issues, allowing users and policymakers to see what's happening in their area.
 ![Screenshot 2024-07-03 at 4 23 35 AM](https://github.com/kailash19961996/London-Issues-Tracker-APP/assets/123597753/185cdb04-474e-4f71-8c92-ca9da148e265)
 
-4. **Summary Page**: AI-generated summaries of user comments for each category of urban issues.
+5. **Summary Page**: AI-generated summaries of user comments for each category of urban issues.
 ![Screenshot 2024-07-03 at 4 24 08 AM](https://github.com/kailash19961996/London-Issues-Tracker-APP/assets/123597753/ae6b8771-4f44-4846-9ba9-5e8f2d36035b)
 
 ## AI Integration
