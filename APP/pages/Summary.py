@@ -86,30 +86,7 @@ st.write(df)
 with st.expander("About the Project"):
     st.markdown("""
     # Welcome to Our Project
+    The London Issues Tracker is a groundbreaking platform developed during the **Future House** hackathon, designed to engage community members and policymakers in addressing urban challenges. Leveraging advanced AI, the platform efficiently processes and analyzes user-submitted reports, providing valuable insights into local issues. Users can upload images and comments about urban problems, which are displayed in real-time on interactive maps. These maps allow both users and policymakers to visualize reported issues and take necessary actions.
 
-    This project focuses on several key areas in urban environments:
-
-    - **GRAFFITI**: Exploring the artistic and social impacts of graffiti in cities.
-    - **GARBAGE**: Addressing waste management and cleanliness in urban areas.
-    - **BROKEN WINDOWS**: Studying the effects of urban decay and vandalism.
-    - **GREEN SPACES**: Promoting parks and natural areas for community well-being.
-    - **PUBLIC BUILDINGS**: Evaluating the use and maintenance of public infrastructure.
-    - **SPORTS AND SOCIAL EVENTS**: Encouraging physical activities, social gatherings and events in neighborhoods.
-
-    ## Objectives
-
-    - **Urban Aesthetics**: Enhancing the visual appeal of urban environments.
-    - **Community Health**: Improving the overall health and well-being of residents.
-    - **Sustainability**: Promoting sustainable practices in waste management and green spaces.
-    - **Safety**: Ensuring safe and welcoming public spaces.
-
-    ## How You Can Get Involved
-
-    We welcome community participation and input. Here are a few ways you can contribute:
-
-    - **Active sharing**
-    - **Verifying others report**
-    - **Keeping the authorities accountable**
-
-    Thank you for visiting our project page. Together, we can make our cities better places to live.
+Key features include AI-generated summaries of user comments, making it easier to understand large volumes of feedback, and graphical representations of issue trends over time, aiding in tracking progress and accountability. The platform aims to enhance urban aesthetics, improve community well-being, promote sustainability, and ensure public safety. Future development ideas include sentiment analysis, predictive modeling, and chatbot integration to further enhance user engagement and functionality. The London Issues Tracker is a powerful tool for fostering community involvement and informed decision-making in urban management.
     """)
