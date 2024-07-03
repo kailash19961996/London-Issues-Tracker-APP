@@ -139,8 +139,8 @@ data = pd.read_csv('APP/REPORTED_DATA.csv', parse_dates=[0])
 # Check if the data contains the required columns
 if 'latitude' in data.columns and 'longitude' in data.columns:
     # Create a new dataframe for the map
-    map_data = data[['latitude', 'longitude', 'category', 'comment', 'timestamp']]
-    map_data.columns = ['lat', 'lon', 'category', 'comment', 'timestamp']
+    map_data = data[[ 'timestamp', 'latitude', 'longitude', 'category', 'comment']]
+    map_data.columns = ['timestamp', 'lat', 'lon', 'category', 'comment']
 else:
     st.write("The CSV file does not contain 'latitude' and 'longitude' columns.")
 
