@@ -1,7 +1,18 @@
 import base64
 import time
 import streamlit as st
-from geopy.geocoders import Nominatim
+from opencage.geocoder import OpenCageGeocode
+from io import BytesIO
+import openai
+import os
+
+# # OpenAI API key
+# api_key = api_key = os.getenv("OPENAI_API_KEY")
+# if api_key is None:
+#     raise ValueError("API key not found. Please set the OPENAI_API_KEY environment variable.")
+# openai.api_key = api_key
+
+openai.api_key = "sk-proj-QEILEClKpePgBokbgaKCT3BlbkFJiHsWVysvAeoXKOHtvcfn"
 
 def add_bg_from_local(image_file):
     with open(image_file, "rb") as image_file:
@@ -40,9 +51,49 @@ def show_gif_overlay(gif_path, duration):
 
 # Function to get geolocation data
 def get_geolocation(address):
-    geolocator = Nominatim(user_agent="geoapiExercises")
-    location = geolocator.geocode(address)
-    if location:
-        return location.latitude, location.longitude
-    else:
+    key = 'e14c2a19f39146c4be104fe2f2289369'
+    geocoder = OpenCageGeocode(key)
+    try:
+        result = geocoder.geocode(address)
+        if result and len(result):
+            location = result[0]['geometry']
+            return location['lat'], location['lng']
+        else:
+            return None, None
+    except Exception as e:
+        st.error(f"Geocoding service error: {e}")
         return None, None
+    
+
+# Function to classify image
+def classify_image(image):
+    # Convert the image to base64
+    buffered = BytesIO()
+    image.save(buffered, format="PNG")
+    image_base64 = base64.b64encode(buffered.getvalue()).decode('utf-8')
+
+    try:
+        response = openai.ChatCompletion.create(
+            model="gpt-4o",
+            messages=[
+                {
+                    "role": "user",
+                    "content": [
+                        {"type": "text", "text": "Classify this image mostly into one of the following categories: graffiti, garbage, broken_window, green_spaces, public_buildings, sports_and_social_events, other. Respond with only the category name."},
+                        {
+                            "type": "image_url",
+                            "image_url": {
+                                "url": f"data:image/png;base64,{image_base64}"
+                            }
+                        }
+                    ]
+                }
+            ],
+            max_tokens=10
+        )
+        return response.choices[0].message.content.strip().lower()
+    except Exception as e:
+        st.error(f"Error classifying image: {str(e)}")
+        return None
+    
+
