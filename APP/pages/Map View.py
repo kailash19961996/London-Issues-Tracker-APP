@@ -31,8 +31,9 @@ if 'longitude' not in st.session_state:
 # Load the data
 data = pd.read_csv('APP/REPORTED_DATA.csv', parse_dates=[0])
 if 'latitude' in data.columns and 'longitude' in data.columns:
-    map_data = data[['latitude', 'longitude', 'category', 'comment']]
-    map_data.columns = ['lat', 'lon', 'category', 'comment']
+    map_data = data[[ 'timestamp', 'latitude', 'longitude', 'category', 'comment']]
+    map_data.columns = ['timestamp', 'lat', 'lon', 'category', 'comment']
+    map_data['timestamp'] = map_data['timestamp'].astype(str)
 else:
     st.write("The CSV file does not contain 'latitude' and 'longitude' columns.")
 
@@ -64,7 +65,7 @@ layer = pdk.Layer(
 )
 
 tooltip = {
-    "html": "<b>Category:</b> {category} <br/><b>Comment:</b> {comment}",
+    "html": "<b>Category:</b> {category} <br/><b>Comment:</b> {comment}<br/><b>Report Time:</b> {timestamp} <br/>",
     "style": {
         "backgroundColor": "steelblue",
         "color": "white",
