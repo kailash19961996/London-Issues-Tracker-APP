@@ -152,18 +152,6 @@ st.markdown("""
     </div>
     """, unsafe_allow_html=True)
 
-st.markdown("""
-<div style='text-align: center;'>
-    <h2>     Interactive Live Map </h2>
-</div>
-""", unsafe_allow_html=True)
-
-st.markdown("""
-<div style='text-align: center;'>
-Hover over the red spots for more info
-</div>
-""", unsafe_allow_html=True)
-
 # Load the data
 data = pd.read_csv('APP/REPORTED_DATA.csv', parse_dates=[0])
 
