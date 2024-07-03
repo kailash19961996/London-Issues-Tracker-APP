@@ -40,6 +40,16 @@ else:
 with st.form(key='report_form'):
             address = st.text_input("Enter your PINCODE to find the reports nearby your area:")
             submit_button = st.form_submit_button(label='Submit')
+
+st.markdown("""
+    <style>
+    .stButton {
+        display: flex;
+        justify-content: center;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
 if submit_button:
     if address:
         latitude, longitude, area_name = get_geolocation(address)
