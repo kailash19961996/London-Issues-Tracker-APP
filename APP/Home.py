@@ -7,7 +7,6 @@ import openai
 import requests
 import pandas as pd
 import base64
-
 import pydeck as pdk
 from background import add_bg_from_local, show_gif_overlay, get_geolocation, classify_image
 
@@ -33,6 +32,14 @@ with col1:
     st.image(logo, width=100)
 with col2:
     st.title("London Issue Tracker")
+
+# Center the logo and title
+st.markdown("""
+    <div style='text-align: center;'>
+        <img src='data:image/png;base64,{}' width='100'/>
+        <h1>London Issue Tracker</h1>
+    </div>
+    """.format(base64.b64encode(logo.tobytes()).decode()), unsafe_allow_html=True)
 
 st.markdown("""
 <div style='text-align: center;'>
