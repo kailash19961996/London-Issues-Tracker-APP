@@ -82,7 +82,7 @@ st.markdown(f"""
 
 st.markdown("""
 <div style='text-align: center;'>
-"The AI summary feature is incredibly helpful when there are thousands of comments, as it generates concise overviews, making it easier to quickly grasp the key issues and insights."        
+<i>"The AI summary feature is incredibly helpful when there are thousands of comments, as it generates concise overviews, making it easier to quickly grasp the key issues and insights."<i>        
 </div>
 """, unsafe_allow_html=True)
 
