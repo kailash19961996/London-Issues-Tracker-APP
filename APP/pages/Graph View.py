@@ -29,7 +29,7 @@ df.set_index('timestamp', inplace=True)
 
 # Select category
 categories = df['category'].unique()
-selected_category = st.selectbox('Select Category', categories)
+selected_category = st.selectbox('Start by Selecting a Category', categories)
 
 # Filter data by selected category
 df_filtered = df[df['category'] == selected_category]
