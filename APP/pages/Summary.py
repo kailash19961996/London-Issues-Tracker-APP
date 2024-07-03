@@ -63,27 +63,10 @@ st.markdown("""
 
 st.markdown("""
 <div style='text-align: center;'>
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+"The AI summary feature is incredibly helpful when there are thousands of comments, as it generates concise overviews, making it easier to quickly grasp the key issues and insights."        
 </div>
 """, unsafe_allow_html=True)
 
-st.markdown("""
-<div style='text-align: center;'>
-    <h4> < POWERED BY AI > </h4>
-</div>
-""", unsafe_allow_html=True)
-
-st.markdown("""
-<div style='text-align: center;'>
-Use Latest and powerful LLM's like GPT-4o to summarize this report          
-</div>
-""", unsafe_allow_html=True)
-
-st.markdown("""
-<div style='text-align: center;'>
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-</div>
-""", unsafe_allow_html=True)
 
 # Summarize comments
 if st.button('Summarize Comments'):
