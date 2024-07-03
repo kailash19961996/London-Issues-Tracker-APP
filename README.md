@@ -12,18 +12,19 @@ or scan the QR code
 ## Key Features
 
 1. **Home Page**: Users can upload images and comments about urban issues they encounter and see them updated in real-time on interactive maps, which are also visible to other users.
-![Screenshot 2024-07-02 at 1 28 02 AM](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/3e19918a-8531-4cc9-8c6a-86be49965f80)
-![Screenshot 2024-07-02 at 1 28 42 AM](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/dc3bd5ab-2d8d-45ba-827e-45fa5259b478)
-![Screenshot 2024-07-02 at 1 29 18 AM](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/def7ef54-58e3-40da-a4ae-16394c7317d2)
+![Screenshot 2024-07-03 at 4 20 41 AM](https://github.com/kailash19961996/London-Issues-Tracker-APP/assets/123597753/ef63a7b3-8532-4833-9ea2-9138690a8995)
+![Screenshot 2024-07-03 at 4 21 14 AM](https://github.com/kailash19961996/London-Issues-Tracker-APP/assets/123597753/57ce48e2-8948-420c-8bd2-b98c0e49f0c4)
+![Screenshot 2024-07-03 at 4 22 15 AM](https://github.com/kailash19961996/London-Issues-Tracker-APP/assets/123597753/4f611b7b-af3b-4205-8308-88eef830e28a)
+![Screenshot 2024-07-03 at 4 22 52 AM](https://github.com/kailash19961996/London-Issues-Tracker-APP/assets/123597753/ce67a98e-2e76-4299-8d40-f169f990b67c)
 
 2. **Reports**: Provides graphical representations of issue trends over time, helping track progress and hold authorities accountable.
-![Screenshot 2024-07-02 at 12 13 48 AM](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/489f52aa-22e4-4c00-a5d9-dfeb24cb38f2)
+![Screenshot 2024-07-03 at 4 23 10 AM](https://github.com/kailash19961996/London-Issues-Tracker-APP/assets/123597753/a266afc0-04ec-48af-a457-36501566dccb)
 
 3. **Interactive Maps**: Real-time visualization of reported issues, allowing users and policymakers to see what's happening in their area.
-![Screenshot 2024-07-02 at 12 13 58 AM](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/ff492c99-866f-4a41-b5f6-1074a9bc4695)
+![Screenshot 2024-07-03 at 4 23 35 AM](https://github.com/kailash19961996/London-Issues-Tracker-APP/assets/123597753/185cdb04-474e-4f71-8c92-ca9da148e265)
 
 4. **Summary Page**: AI-generated summaries of user comments for each category of urban issues.
-![Screenshot 2024-07-02 at 12 14 32 AM](https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/b4c91ddb-5cde-43f7-be4b-a67716812667)
+![Screenshot 2024-07-03 at 4 24 08 AM](https://github.com/kailash19961996/London-Issues-Tracker-APP/assets/123597753/ae6b8771-4f44-4846-9ba9-5e8f2d36035b)
 
 ## AI Integration
 
