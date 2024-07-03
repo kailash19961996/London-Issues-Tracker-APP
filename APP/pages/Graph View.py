@@ -34,7 +34,7 @@ st.markdown(f"""
 
 st.markdown("""
 <div style='text-align: center;'>
-"Graphical representations track issue trends over time, helping monitor progress and accountability."        
+<i>"Graphical representations track issue trends over time, helping monitor progress and accountability."<i>       
 </div>
 """, unsafe_allow_html=True)
 
