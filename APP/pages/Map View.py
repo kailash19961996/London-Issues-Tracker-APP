@@ -3,14 +3,18 @@ import pandas as pd
 import requests
 import pydeck as pdk
 from background import add_bg_from_local, get_geolocation, show_gif_overlay
+from Home import api_key
+from PIL import Image
 
 add_bg_from_local('APP/background_images/background.gif')
 
-st.markdown("""
-<div style='text-align: center;'>
-    <h1> Reports by Location </h2>
-</div>
-""", unsafe_allow_html=True)
+logo = Image.open("APP/background_images/logo_wihtout_background.png")
+# Create columns to align the logo left of the title
+col1, col2 = st.columns([1, 5])
+with col1:
+    st.image(logo, width=100)
+with col2:
+    st.title("Reports by Location")
 
 st.markdown("""
 <div style='text-align: center;'>
