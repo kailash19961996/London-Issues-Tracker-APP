@@ -3,11 +3,20 @@ import pandas as pd
 import streamlit as st
 from datetime import datetime
 from background import add_bg_from_local
+from Home import api_key
+from PIL import Image
 
 add_bg_from_local('APP/background_images/background.gif')
 
-# Streamlit app
-st.title('Comments Over Time by Category')
+logo = Image.open("APP/background_images/logo_wihtout_background.png")
+
+# Create columns to align the logo left of the title
+col1, col2 = st.columns([1, 5])
+with col1:
+    st.image(logo, width=100)
+with col2:
+    st.title("Trends by Category")
+
 st.markdown("""
 <div style='text-align: center;'>
 "Graphical representations track issue trends over time, helping monitor progress and accountability."        
