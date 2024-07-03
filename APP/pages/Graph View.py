@@ -5,6 +5,8 @@ from datetime import datetime
 from background import add_bg_from_local
 from Home import api_key
 from PIL import Image
+import base64
+from io import BytesIO
 
 add_bg_from_local('APP/background_images/background.gif')
 
