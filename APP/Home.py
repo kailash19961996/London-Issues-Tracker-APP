@@ -114,7 +114,7 @@ if uploaded_file is not None:
     else:
         with st.form(key='report_form'):
             comment = st.text_input("Add a comment about the image:")
-            address = st.text_input("Enter your PINCODE or street name or city:")
+            address = st.text_input("Enter your POSTCODE or street name or city:")
             submit_button = st.form_submit_button(label='Submit')
 
         if submit_button:
@@ -211,6 +211,7 @@ st.markdown("""
         <a href="https://litapp.streamlit.app/Graph_View" target="_self"><button>Go to Trends</button></a>
         <a href="https://litapp.streamlit.app/Map_View" target="_self"><button>Go to Maps</button></a>
         <a href="https://litapp.streamlit.app/Summary" target="_self"><button>Go to Summary</button></a>
+        <a href="https://kailashsubramaniyam.com/" target="_self"><button>Reach out to me</button></a>
     </div>
     """, unsafe_allow_html=True)
 
