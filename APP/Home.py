@@ -192,3 +192,26 @@ r = pdk.Deck(layers=[layer],
 st.pydeck_chart(r)
 st.write(f"Latitude: {latitude}, Longitude: {longitude}")
 
+st.markdown("""
+    <style>
+    .centered-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+# Container to center the buttons
+st.markdown('<div class="centered-buttons">', unsafe_allow_html=True)
+
+# Buttons with links
+st.markdown("""
+    <div class="centered-buttons">
+        <a href="https://litapp.streamlit.app/Graphs" target="_self"><button>Go to Trends</button></a>
+        <a href="https://litapp.streamlit.app/Map_View" target="_self"><button>Go to Maps</button></a>
+        <a href="https://litapp.streamlit.app/Summary" target="_self"><button>Go to Summary</button></a>
+    </div>
+    """, unsafe_allow_html=True)
+
+st.markdown('</div>', unsafe_allow_html=True)
