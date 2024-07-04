@@ -55,7 +55,7 @@ else:
     st.write("The CSV file does not contain 'latitude' and 'longitude' columns.")
 
 with st.form(key='report_form'):
-            address = st.text_input("Enter your PINCODE to find the reports nearby your area:")
+            address = st.text_input("Enter your POSTCODE to find the reports nearby your area:")
             submit_button = st.form_submit_button(label='Submit')
 
 st.markdown("""
@@ -76,9 +76,9 @@ if submit_button:
             st.session_state.longitude = longitude
             st.info(f"Area Name: {area_name}, Latitude: {latitude}, Longitude: {longitude}")
         else:
-            st.error("Could not find geolocation for the provided address. Please check your PINCODE again")
+            st.error("Could not find geolocation for the provided address. Please check your POSTCODE again")
     else:
-        st.error('Enter your PINCODE before submitting.')
+        st.error('Enter your POSTCODE before submitting.')
 
 # Display the map using pydeck
 layer = pdk.Layer(
@@ -135,6 +135,7 @@ st.markdown("""
         <a href="https://litapp.streamlit.app" target="_self"><button>Go to Home</button></a>
         <a href="https://litapp.streamlit.app/Graph_View" target="_self"><button>Go to Trends</button></a>
         <a href="https://litapp.streamlit.app/Summary" target="_self"><button>Go to Summary</button></a>
+        <a href="https://kailashsubramaniyam.com/" target="_self"><button>Reach out to me</button></a>
     </div>
     """, unsafe_allow_html=True)
 
