@@ -135,7 +135,6 @@ st.markdown("""
         <a href="https://litapp.streamlit.app" target="_self"><button>Go to Home</button></a>
         <a href="https://litapp.streamlit.app/Graph_View" target="_self"><button>Go to Trends</button></a>
         <a href="https://litapp.streamlit.app/Summary" target="_self"><button>Go to Summary</button></a>
-        <a href="https://kailashsubramaniyam.com/" target="_self"><button>Reach out to me</button></a>
     </div>
     """, unsafe_allow_html=True)
 
