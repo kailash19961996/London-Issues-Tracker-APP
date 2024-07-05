@@ -96,7 +96,7 @@ if uploaded_file is not None:
     # Classify the image
     category = classify_image(image)
     image_path = os.path.join(images_dir, uploaded_file.name)
-    st.success(f'Classification : {category}')
+    st.success(f'AI Classification : {category}')
 
     if category not in categories:
         sample_image_path = 'APP/sample_image/graffiti.jpg'  # Path to sample image
@@ -146,7 +146,7 @@ st.markdown("""
     }
     </style>
     <div class="centered">
-        <h2>Interactive Live Map</h2>
+        <h3>Interactive Live Map</h3>
     </div>
     <div class="centered">
         <i>Hover over the markers for details<i>
