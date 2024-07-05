@@ -39,7 +39,7 @@ def summarize_comments(df):
         if comments:
             prompt = f"Summarize the following user comments and address the major concerns mentioned:\n\n{comments}"
             response = openai.ChatCompletion.create(
-                model="ada",
+                model="gpt-3.5-turbo",
                 messages=[
                     {
                         "role": "user",
