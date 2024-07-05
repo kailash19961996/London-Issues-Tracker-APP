@@ -126,9 +126,9 @@ st.markdown('<div class="centered-buttons">', unsafe_allow_html=True)
 # Buttons with links
 st.markdown("""
     <div class="centered-buttons">
-        <a href="https://litapp.streamlit.app" target="_self"><button>Go to Home</button></a>
-        <a href="https://litapp.streamlit.app/Graph_View" target="_self"><button>Go to Trends</button></a>
-        <a href="https://litapp.streamlit.app/Map_View" target="_self"><button>Go to Maps</button></a>
+        <a href="https://litapp.streamlit.app" target="_self"><button>Home</button></a>
+        <a href="https://litapp.streamlit.app/Graph_View" target="_self"><button>Trends</button></a>
+        <a href="https://litapp.streamlit.app/Map_View" target="_self"><button>Maps</button></a>
     </div>
     """, unsafe_allow_html=True)
 
