@@ -8,7 +8,7 @@ The London Issues Tracker is an interactive AI powered platform designed to enga
 
 [Click here to see the full video tutorial](https://www.youtube.com/watch?v=sVXmwHM06w8&ab_channel=KailashSubramaniyam)
 
-[![Watch the video](https://img.youtube.com/vi/sVXmwHM06w8/01.jpg)](https://www.youtube.com/watch?v=sVXmwHM06w8)
+[![Watch the video](https://img.youtube.com/vi/sVXmwHM06w8/0.jpg)](https://www.youtube.com/watch?v=sVXmwHM06w8)
 
 or scan the QR code
 ![qr-code](https://github.com/kailash19961996/London-Issues-Tracker-APP/assets/123597753/500c3281-6cbe-4c2f-801c-59cc73693dd1)
