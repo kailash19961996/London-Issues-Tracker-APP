@@ -11,7 +11,7 @@ from io import BytesIO
 import pydeck as pdk
 from background import add_bg_from_local, show_gif_overlay, get_geolocation, classify_image
 
-# Set OpenAI API key
+
 api_key = st.secrets["openai"]["api_key"]
 if api_key is None:
     raise ValueError("API key not found. Please set the OPENAI_API_KEY environment variable.")
@@ -51,16 +51,13 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 latitude, longitude = 51.5074456, -0.1277653 # London
-# Initialize session state for latitude and longitude if not already done
 if 'latitude' not in st.session_state:
     st.session_state.latitude = latitude
 if 'longitude' not in st.session_state:
     st.session_state.longitude = longitude
 
-# File uploader
 uploaded_file = st.file_uploader("Start by uploading an image...", type=['png', 'jpg', 'jpeg', 'webp', 'heic'])
 
-# Define categories
 categories = [
     "graffiti",
     "garbage",
@@ -128,7 +125,7 @@ if uploaded_file is not None:
                     st.session_state.longitude = longitude
                     st.success(f"Latitude: {latitude}, Longitude: {longitude}")
                     st.info(f"Area Name: {area_name}")
-                    sanitized_comment = comment.replace(',', '')  # Remove all commas from the comment
+                    sanitized_comment = comment.replace(',', '')
                     image.save(image_path)
                     save_image_data(formatted_timestamp, latitude, longitude, image_path, category, sanitized_comment)
                     st.success('Thanks for reporting your thoughts, we will look into it.')
@@ -205,7 +202,6 @@ st.markdown("""
 # Container to center the buttons
 st.markdown('<div class="centered-buttons">', unsafe_allow_html=True)
 
-# Buttons with links
 st.markdown("""
     <div class="centered-buttons">
         <a href="https://litapp.streamlit.app/Graph_View" target="_self"><button>Trends</button></a>
