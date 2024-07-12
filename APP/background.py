@@ -6,7 +6,7 @@ from io import BytesIO
 import openai
 import os
 
-# # OpenAI API key
+# OpenAI API key
 api_key = st.secrets["openai"]["api_key"]
 if api_key is None:
     raise ValueError("API key not found. Please set the OPENAI_API_KEY environment variable.")
@@ -48,7 +48,7 @@ def show_gif_overlay(gif_path, duration):
     overlay_placeholder.empty()
 
 def get_geolocation(address):
-    key = 'e14c2a19f39146c4be104fe2f2289369'  # Replace with your OpenCage API key
+    key = 'e14c2a19f39146c4be104fe2f2289369' 
     geocoder = OpenCageGeocode(key)
     try:
         result = geocoder.geocode(address)
