@@ -62,8 +62,6 @@ def get_geolocation(address):
         st.error(f"Geocoding service error: {e}")
         return None, None, None
     
-
-# Function to classify image
 def classify_image(image):
     # Convert the image to base64
     buffered = BytesIO()
