@@ -54,6 +54,16 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
+@st.experimental_dialog("How to use this APP", width=1920)
+def show_video():
+    video_url = "https://www.youtube.com/watch?v=sVXmwHM06w8&t=4s&ab_channel=KailashSubramaniyam"
+    st.video(video_url, loop=False, autoplay=True, muted=True)
+
+c1,c2,c3 = st.columns(3)
+with c2:
+    if st.button('How to use this APP'):
+        show_video()
+        
 latitude, longitude = 51.5074456, -0.1277653 # London
 if 'latitude' not in st.session_state:
     st.session_state.latitude = latitude
