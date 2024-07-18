@@ -9,6 +9,7 @@ import base64
 from io import BytesIO
 
 add_bg_from_local('APP/background_images/background.gif')
+st.sidebar.caption("Built by [Kai](https://kailashsubramaniyam.com/). Like this? [Hire me!](https://kailashsubramaniyam.com/contact)")
 
 logo = Image.open("APP/background_images/logo_wihtout_background.png")
 buffered = BytesIO()
