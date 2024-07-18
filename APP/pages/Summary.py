@@ -142,3 +142,9 @@ The London Issues Tracker is a groundbreaking platform developed during the Futu
 
 Key features include AI-generated summaries of user comments, making it easier to understand large volumes of feedback, and graphical representations of issue trends over time, aiding in tracking progress and accountability. The platform aims to enhance urban aesthetics, improve community well-being, promote sustainability, and ensure public safety. Future development ideas include sentiment analysis, predictive modeling, and chatbot integration to further enhance user engagement and functionality. The London Issues Tracker is a powerful tool for fostering community involvement and informed decision-making in urban management.
     """)
+
+st.markdown("""
+<div style='text-align: center;'>
+    Built by <a href="https://kailashsubramaniyam.com/">Kai</a>. Like this? <a href="https://kailashsubramaniyam.com/contact">Hire me!</a>
+</div>
+""", unsafe_allow_html=True)
