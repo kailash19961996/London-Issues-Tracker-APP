@@ -19,6 +19,10 @@ openai.api_key = api_key
 
 add_bg_from_local('APP/background_images/whitebgs.jpg')
 
+st.sidebar.caption(
+    "Built by [Kai](https://kailashsubramaniyam.com/). Like this? [Hire me!](https://kailashsubramaniyam.com/contact)"
+)
+
 logo = Image.open("APP/background_images/logo_wihtout_background.png")
 buffered = BytesIO()
 logo.save(buffered, format="PNG")
