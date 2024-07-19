@@ -39,9 +39,9 @@ st.sidebar.caption(
             <a href = 'https://kailashsubramaniyam.com/'><img src='{website}' style='width: 35px; height: 35px; margin-right: 25px;'></a>
             <a href = 'https://www.youtube.com/@kailashbalasubramaniyam2449/videos'><img src='{Youtube}' style='width: 28px; height: 28px; margin-right: 25px;'></a>
             <a href = 'https://www.linkedin.com/in/kailash-kumar-balasubramaniyam-62b075184'><img src='{linkedin}' style='width: 35px; height: 35px; margin-right: 25px;'></a>
-            <a href = 'https://github.com/kailash19961996'><img src='{github}' style='width: 25px; height: 25px; margin-right: 25px;'></a>
+            <a href = 'https://github.com/kailash19961996'><img src='{github}' style='width: 30px; height: 30px; margin-right: 25px;'></a>
             <a href = 'https://x.com/kylasben'><img src='{twitter}' style='width: 28px; height: 28px; margin-right: 25px;'></a>
-            <a href = 'mailto:kailash.balasubramaniyam@gmail.com''><img src='{email}' style='width: 35px; height: 35px; margin-right: 25px;'></a>
+            <a href = 'mailto:kailash.balasubramaniyam@gmail.com''><img src='{email}' style='width: 31px; height: 31px; margin-right: 25px;'></a>
         </div>""", unsafe_allow_html=True,)
 
 logo = Image.open("APP/background_images/logo_wihtout_background.png")
@@ -77,9 +77,9 @@ with coll2:
             <a href = 'https://kailashsubramaniyam.com/'><img src='{website}' style='width: 35px; height: 35px; margin-right: 25px;'></a>
             <a href = 'https://www.youtube.com/@kailashbalasubramaniyam2449/videos'><img src='{Youtube}' style='width: 28px; height: 28px; margin-right: 25px;'></a>
             <a href = 'https://www.linkedin.com/in/kailash-kumar-balasubramaniyam-62b075184'><img src='{linkedin}' style='width: 35px; height: 35px; margin-right: 25px;'></a>
-            <a href = 'https://github.com/kailash19961996'><img src='{github}' style='width: 25px; height: 25px; margin-right: 25px;'></a>
+            <a href = 'https://github.com/kailash19961996'><img src='{github}' style='width: 30px; height: 30px; margin-right: 25px;'></a>
             <a href = 'https://x.com/kylasben'><img src='{twitter}' style='width: 28px; height: 28px; margin-right: 25px;'></a>
-            <a href = 'mailto:kailash.balasubramaniyam@gmail.com''><img src='{email}' style='width: 35px; height: 35px; margin-right: 25px;'></a>
+            <a href = 'mailto:kailash.balasubramaniyam@gmail.com''><img src='{email}' style='width: 31px; height: 31px; margin-right: 25px;'></a>
         </div>""", unsafe_allow_html=True,)
     
 st.markdown("""
