@@ -25,7 +25,7 @@ st.sidebar.caption(
 
 
 linkedin = "https://raw.githubusercontent.com/kailash19961996/icons-and-images/main/linkedin.gif"
-github =   "https://raw.githubusercontent.com/kailash19961996/icons-and-images/main/github_transparent.gif"
+github =   "https://raw.githubusercontent.com/kailash19961996/icons-and-images/main/gitcolor.gif"
 Youtube =  "https://raw.githubusercontent.com/kailash19961996/icons-and-images/main/371907120_YOUTUBE_ICON_TRANSPARENT_1080.gif"
 twitter =  "https://raw.githubusercontent.com/kailash19961996/icons-and-images/main/371907030_TWITTER_ICON_TRANSPARENT_1080.gif"
 email =    "https://raw.githubusercontent.com/kailash19961996/icons-and-images/main/emails33.gif"
