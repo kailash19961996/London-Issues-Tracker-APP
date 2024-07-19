@@ -44,21 +44,6 @@ st.sidebar.caption(
             <a href = 'mailto:kailash.balasubramaniyam@gmail.com''><img src='{email}' style='width: 35px; height: 35px; margin-right: 25px;'></a>
         </div>""", unsafe_allow_html=True,)
 
-
-coll1,coll2,coll3 = st.columns(3)
-with coll2:
-    st.write(
-        f"""
-            <div style='display: flex; align-items: center;'>
-            <a href = 'https://kailashsubramaniyam.com/'><img src='{website}' style='width: 35px; height: 35px; margin-right: 25px;'></a>
-            <a href = 'https://www.youtube.com/@kailashbalasubramaniyam2449/videos'><img src='{Youtube}' style='width: 28px; height: 28px; margin-right: 25px;'></a>
-            <a href = 'https://www.linkedin.com/in/kailash-kumar-balasubramaniyam-62b075184'><img src='{linkedin}' style='width: 35px; height: 35px; margin-right: 25px;'></a>
-            <a href = 'https://github.com/kailash19961996'><img src='{github}' style='width: 25px; height: 25px; margin-right: 25px;'></a>
-            <a href = 'https://x.com/kylasben'><img src='{twitter}' style='width: 28px; height: 28px; margin-right: 25px;'></a>
-            <a href = 'mailto:kailash.balasubramaniyam@gmail.com''><img src='{email}' style='width: 35px; height: 35px; margin-right: 25px;'></a>
-        </div>""", unsafe_allow_html=True,)
-
-
 logo = Image.open("APP/background_images/logo_wihtout_background.png")
 buffered = BytesIO()
 logo.save(buffered, format="PNG")
@@ -99,7 +84,20 @@ c1,c2,c3 = st.columns(3)
 with c2:
     if st.button('How to use this APP'):
         show_video()
-        
+
+coll1,coll2,coll3 = st.columns(3)
+with coll2:
+    st.write(
+        f"""
+            <div style='display: flex; align-items: center;'>
+            <a href = 'https://kailashsubramaniyam.com/'><img src='{website}' style='width: 35px; height: 35px; margin-right: 25px;'></a>
+            <a href = 'https://www.youtube.com/@kailashbalasubramaniyam2449/videos'><img src='{Youtube}' style='width: 28px; height: 28px; margin-right: 25px;'></a>
+            <a href = 'https://www.linkedin.com/in/kailash-kumar-balasubramaniyam-62b075184'><img src='{linkedin}' style='width: 35px; height: 35px; margin-right: 25px;'></a>
+            <a href = 'https://github.com/kailash19961996'><img src='{github}' style='width: 25px; height: 25px; margin-right: 25px;'></a>
+            <a href = 'https://x.com/kylasben'><img src='{twitter}' style='width: 28px; height: 28px; margin-right: 25px;'></a>
+            <a href = 'mailto:kailash.balasubramaniyam@gmail.com''><img src='{email}' style='width: 35px; height: 35px; margin-right: 25px;'></a>
+        </div>""", unsafe_allow_html=True,)
+    
 latitude, longitude = 51.5074456, -0.1277653 # London
 if 'latitude' not in st.session_state:
     st.session_state.latitude = latitude
