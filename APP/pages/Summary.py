@@ -11,6 +11,22 @@ from io import BytesIO
 add_bg_from_local('APP/background_images/whitebgs.jpg')
 st.sidebar.caption("Built by [Kai](https://kailashsubramaniyam.com/). Like this? [Hire me!](https://kailashsubramaniyam.com/contact)")
 
+linkedin = "https://raw.githubusercontent.com/kailash19961996/icons-and-images/main/linkedin.gif"
+github =   "https://raw.githubusercontent.com/kailash19961996/icons-and-images/main/gitcolor.gif"
+Youtube =  "https://raw.githubusercontent.com/kailash19961996/icons-and-images/main/371907120_YOUTUBE_ICON_TRANSPARENT_1080.gif"
+email =    "https://raw.githubusercontent.com/kailash19961996/icons-and-images/main/emails33.gif"
+website =  "https://raw.githubusercontent.com/kailash19961996/icons-and-images/main/www.gif"
+
+st.sidebar.caption(
+    f"""
+        <div style='display: flex; align-items: center;'>
+            <div style='display: flex; align-items: center;'>
+            <a href = 'https://kailashsubramaniyam.com/'><img src='{website}' style='width: 35px; height: 35px; margin-right: 25px;'></a>
+            <a href = 'https://www.youtube.com/@kailashbalasubramaniyam2449/videos'><img src='{Youtube}' style='width: 28px; height: 28px; margin-right: 25px;'></a>
+            <a href = 'https://www.linkedin.com/in/kailash-kumar-balasubramaniyam-62b075184'><img src='{linkedin}' style='width: 35px; height: 35px; margin-right: 25px;'></a>
+            <a href = 'https://github.com/kailash19961996'><img src='{github}' style='width: 30px; height: 30px; margin-right: 25px;'></a>
+            <a href = 'mailto:kailash.balasubramaniyam@gmail.com''><img src='{email}' style='width: 31px; height: 31px; margin-right: 25px;'></a>
+        </div>""", unsafe_allow_html=True,)
 openai.api_key = api_key
 logo = Image.open("APP/background_images/logo_wihtout_background.png")
 buffered = BytesIO()
@@ -149,3 +165,15 @@ st.markdown("""
     Built by <a href="https://kailashsubramaniyam.com/">Kai</a>. Like this? <a href="https://kailashsubramaniyam.com/contact">Hire me!</a>
 </div>
 """, unsafe_allow_html=True)
+
+coll1,coll2,coll3 = st.columns(3)
+with coll2:
+    st.write(
+        f"""
+            <div style='display: flex; align-items: center;'>
+            <a href = 'https://kailashsubramaniyam.com/'><img src='{website}' style='width: 35px; height: 35px; margin-right: 25px;'></a>
+            <a href = 'https://www.youtube.com/@kailashbalasubramaniyam2449/videos'><img src='{Youtube}' style='width: 28px; height: 28px; margin-right: 25px;'></a>
+            <a href = 'https://www.linkedin.com/in/kailash-kumar-balasubramaniyam-62b075184'><img src='{linkedin}' style='width: 35px; height: 35px; margin-right: 25px;'></a>
+            <a href = 'https://github.com/kailash19961996'><img src='{github}' style='width: 30px; height: 30px; margin-right: 25px;'></a>
+            <a href = 'mailto:kailash.balasubramaniyam@gmail.com''><img src='{email}' style='width: 31px; height: 31px; margin-right: 25px;'></a>
+        </div>""", unsafe_allow_html=True,)
