@@ -1,3 +1,25 @@
+"""
+London Issues Tracker! 🚀
+
+A platform developed to engage community members and policymakers in addressing urban challenges.
+
+How This App is Useful:
+
+1️⃣ For Reporters: If you notice something wrong or have a suggestion for your community, you can easily report it here. 
+On hashtag#Home page, upload your image , your comment, and location, then submit.
+
+2️⃣ For the Audience: Even if you don't have reports to submit, you can explore all reports on our interactive hashtag#Maps and 
+hashtag#Graphs page to stay informed about what's happening around you.
+
+3️⃣ For Authorities: Policymakers and politicians can access a summary of all reports on the hashtag#AISummary page to address 
+and fix issues within the community, promoting transparency and accountability. 🗺️📊
+
+The Story Behind the App:
+The London Issues Tracker was created during a hackathon organized by FutureLondon.org, with contributions 
+from passionate policymakers and tech enthusiasts Joseph Reeve, and Nathan Young. 
+This project is a testament to what can be achieved when technology and community spirit come together.
+"""
+
 import streamlit as st
 import os
 import time
