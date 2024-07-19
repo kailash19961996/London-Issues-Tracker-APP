@@ -27,7 +27,6 @@ st.sidebar.caption(
 linkedin = "https://raw.githubusercontent.com/kailash19961996/icons-and-images/main/linkedin.gif"
 github =   "https://raw.githubusercontent.com/kailash19961996/icons-and-images/main/gitcolor.gif"
 Youtube =  "https://raw.githubusercontent.com/kailash19961996/icons-and-images/main/371907120_YOUTUBE_ICON_TRANSPARENT_1080.gif"
-twitter =  "https://raw.githubusercontent.com/kailash19961996/icons-and-images/main/371907030_TWITTER_ICON_TRANSPARENT_1080.gif"
 email =    "https://raw.githubusercontent.com/kailash19961996/icons-and-images/main/emails33.gif"
 website =  "https://raw.githubusercontent.com/kailash19961996/icons-and-images/main/www.gif"
 
@@ -40,7 +39,6 @@ st.sidebar.caption(
             <a href = 'https://www.youtube.com/@kailashbalasubramaniyam2449/videos'><img src='{Youtube}' style='width: 28px; height: 28px; margin-right: 25px;'></a>
             <a href = 'https://www.linkedin.com/in/kailash-kumar-balasubramaniyam-62b075184'><img src='{linkedin}' style='width: 35px; height: 35px; margin-right: 25px;'></a>
             <a href = 'https://github.com/kailash19961996'><img src='{github}' style='width: 30px; height: 30px; margin-right: 25px;'></a>
-            <a href = 'https://x.com/kylasben'><img src='{twitter}' style='width: 28px; height: 28px; margin-right: 25px;'></a>
             <a href = 'mailto:kailash.balasubramaniyam@gmail.com''><img src='{email}' style='width: 31px; height: 31px; margin-right: 25px;'></a>
         </div>""", unsafe_allow_html=True,)
 
@@ -78,7 +76,6 @@ with coll2:
             <a href = 'https://www.youtube.com/@kailashbalasubramaniyam2449/videos'><img src='{Youtube}' style='width: 28px; height: 28px; margin-right: 25px;'></a>
             <a href = 'https://www.linkedin.com/in/kailash-kumar-balasubramaniyam-62b075184'><img src='{linkedin}' style='width: 35px; height: 35px; margin-right: 25px;'></a>
             <a href = 'https://github.com/kailash19961996'><img src='{github}' style='width: 30px; height: 30px; margin-right: 25px;'></a>
-            <a href = 'https://x.com/kylasben'><img src='{twitter}' style='width: 28px; height: 28px; margin-right: 25px;'></a>
             <a href = 'mailto:kailash.balasubramaniyam@gmail.com''><img src='{email}' style='width: 31px; height: 31px; margin-right: 25px;'></a>
         </div>""", unsafe_allow_html=True,)
     
