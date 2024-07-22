@@ -6,7 +6,7 @@ The London Issues Tracker is an interactive AI powered platform designed to enga
 
 [Click here to try the app](https://litapp.streamlit.app/)
 
-[Click here to see the full video tutorial](https://www.youtube.com/watch?v=sVXmwHM06w8&ab_channel=KailashSubramaniyam)
+Click below to see the full video tutorial
 
 [![Watch the video](https://img.youtube.com/vi/sVXmwHM06w8/0.jpg)](https://www.youtube.com/watch?v=sVXmwHM06w8)
 
