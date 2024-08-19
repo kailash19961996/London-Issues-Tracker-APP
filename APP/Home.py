@@ -109,7 +109,7 @@ st.markdown("""
 
 @st.experimental_dialog("How to use this APP", width=1920)
 def show_video():
-    video_url = "https://www.youtube.com/watch?v=sVXmwHM06w8&t=4s&ab_channel=KailashSubramaniyam"
+    video_url = "https://www.youtube.com/watch?v=JLTRx_wt9Cw"
     st.video(video_url, loop=False, autoplay=True, muted=False)
 
 c1,c2,c3 = st.columns(3)
