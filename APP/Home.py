@@ -57,7 +57,7 @@ st.sidebar.caption(
     f"""
         <div style='display: flex; align-items: center;'>
             <div style='display: flex; align-items: center;'>
-            <a href = 'https://kailashsubramaniyam.com/'><img src='{website}' style='width: 35px; height: 35px; margin-right: 25px;'></a>
+            <a href = 'https://kailashsubramaniyam.com/'><img src='{website}' style='width: 45px; height: 45px; margin-right: 25px;'></a>
             <a href = 'https://www.youtube.com/@kailashbalasubramaniyam2449/videos'><img src='{Youtube}' style='width: 28px; height: 28px; margin-right: 25px;'></a>
             <a href = 'https://www.linkedin.com/in/kailash-kumar-balasubramaniyam-62b075184'><img src='{linkedin}' style='width: 35px; height: 35px; margin-right: 25px;'></a>
             <a href = 'https://github.com/kailash19961996'><img src='{github}' style='width: 30px; height: 30px; margin-right: 25px;'></a>
@@ -94,7 +94,7 @@ with coll2:
     st.write(
         f"""
             <div style='display: flex; align-items: center;'>
-            <a href = 'https://kailashsubramaniyam.com/'><img src='{website}' style='width: 35px; height: 35px; margin-right: 25px;'></a>
+            <a href = 'https://kailashsubramaniyam.com/'><img src='{website}' style='width: 45px; height: 45px; margin-right: 25px;'></a>
             <a href = 'https://www.youtube.com/@kailashbalasubramaniyam2449/videos'><img src='{Youtube}' style='width: 28px; height: 28px; margin-right: 25px;'></a>
             <a href = 'https://www.linkedin.com/in/kailash-kumar-balasubramaniyam-62b075184'><img src='{linkedin}' style='width: 35px; height: 35px; margin-right: 25px;'></a>
             <a href = 'https://github.com/kailash19961996'><img src='{github}' style='width: 30px; height: 30px; margin-right: 25px;'></a>
