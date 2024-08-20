@@ -117,12 +117,15 @@ st.markdown(f"""
             justify-content: center;
             align-items: center;
             width: 100%;
-            padding-top: 20px; /* Add some top padding for spacing */
+            padding-top: 10px; 
         }}
         .video-container {{
             position: relative;
-            width: 50%; /* Adjust this value to change the video size */
-            padding-bottom: 28.125%; /* 16:9 Aspect Ratio (9 / 16 = 0.5625) * 50% */
+            width: 50%;
+            padding-bottom: 28.125%;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }}
         .video-container iframe {{
             position: absolute;
@@ -130,6 +133,7 @@ st.markdown(f"""
             left: 0;
             width: 100%;
             height: 100%;
+            border-radius: 15px;
         }}
     </style>
     <div class="video-outer-container">
