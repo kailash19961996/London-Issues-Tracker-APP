@@ -115,7 +115,7 @@ st.markdown("""
     }
     </style>
     <div class="centered">
-        <h3>How to use this APP</h3>
+        <h4>How to use this APP</h4>
     </div>
     """, unsafe_allow_html=True)
 
