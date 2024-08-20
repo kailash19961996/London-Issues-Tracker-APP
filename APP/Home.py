@@ -120,7 +120,7 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 video_id = "JLTRx_wt9Cw?si=PIXxzCwoeMLzuovM"
-youtube_embed_url = f"https://www.youtube.com/embed/{video_id}?autoplay=1&mute=1"
+youtube_embed_url = f"https://www.youtube.com/embed/{video_id}?autoplay=1&mute=0"
 st.markdown(f"""
     <style>
         .video-outer-container {{
