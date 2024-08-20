@@ -116,7 +116,44 @@ c1,c2,c3 = st.columns(3)
 with c2:
     if st.button('How to use this APP'):
         show_video()
-    
+
+video_id = "JLTRx_wt9Cw?si=PIXxzCwoeMLzuovM"
+youtube_embed_url = f"https://www.youtube.com/embed/{video_id}?autoplay=1&mute=1"
+
+
+st.markdown(f"""
+    <style>
+        .stApp {{
+            max-width: 800px;
+            margin: 0 auto;
+        }}
+        .video-outer-container {{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding-top: 20px; /* Add some top padding for spacing */
+        }}
+        .video-container {{
+            position: relative;
+            width: 50%; /* Adjust this value to change the video size */
+            padding-bottom: 28.125%; /* 16:9 Aspect Ratio (9 / 16 = 0.5625) * 50% */
+        }}
+        .video-container iframe {{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }}
+    </style>
+    <div class="video-outer-container">
+        <div class="video-container">
+            <iframe src="{youtube_embed_url}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+""", unsafe_allow_html=True)
+
 latitude, longitude = 51.5074456, -0.1277653 # London
 if 'latitude' not in st.session_state:
     st.session_state.latitude = latitude
