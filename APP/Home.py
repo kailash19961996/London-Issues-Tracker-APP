@@ -123,10 +123,6 @@ youtube_embed_url = f"https://www.youtube.com/embed/{video_id}?autoplay=1&mute=1
 
 st.markdown(f"""
     <style>
-        .stApp {{
-            max-width: 800px;
-            margin: 0 auto;
-        }}
         .video-outer-container {{
             display: flex;
             justify-content: center;
