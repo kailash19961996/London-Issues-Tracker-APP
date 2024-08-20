@@ -107,20 +107,20 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-@st.experimental_dialog("How to use this APP", width=1920)
-def show_video():
-    video_url = "https://youtu.be/JLTRx_wt9Cw?si=xshU1D26TGW2zK-G"
-    st.video(video_url, loop=False, autoplay=True, muted=False)
-
-c1,c2,c3 = st.columns(3)
-with c2:
-    if st.button('How to use this APP'):
-        show_video()
+st.markdown("""
+    <style>
+    .centered {
+        text-align: center;
+        margin: 0 auto;
+    }
+    </style>
+    <div class="centered">
+        <h3>How to use this APP</h3>
+    </div>
+    """, unsafe_allow_html=True)
 
 video_id = "JLTRx_wt9Cw?si=PIXxzCwoeMLzuovM"
 youtube_embed_url = f"https://www.youtube.com/embed/{video_id}?autoplay=1&mute=1"
-
-
 st.markdown(f"""
     <style>
         .video-outer-container {{
