@@ -104,20 +104,9 @@ with coll2:
 st.markdown("""
 <div style='text-align: center;'>
      <i>"The app allows users to report, view, and track urban issues in real-time, helping to improve community spaces through AI-driven insights."<i>
+     <h4>How to use this APP</h4>
 </div>
 """, unsafe_allow_html=True)
-
-st.markdown("""
-    <style>
-    .centered {
-        text-align: center;
-        margin: 0 auto;
-    }
-    </style>
-    <div class="centered">
-        <h4>How to use this APP</h4>
-    </div>
-    """, unsafe_allow_html=True)
 
 video_id = "JLTRx_wt9Cw?si=PIXxzCwoeMLzuovM"
 youtube_embed_url = f"https://www.youtube.com/embed/{video_id}?autoplay=1&mute=0"
