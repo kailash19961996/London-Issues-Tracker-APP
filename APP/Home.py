@@ -117,7 +117,7 @@ st.markdown(f"""
             justify-content: center;
             align-items: center;
             width: 100%;
-            padding-top: 10px; 
+            padding-top: 1px; 
         }}
         .video-container {{
             position: relative;
