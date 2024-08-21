@@ -10,7 +10,7 @@ Future development ideas include sentiment analysis, predictive modeling, image 
 
 [Click here to try the app](https://litapp.streamlit.app/)
 
-Click below to see the full video tutorial
+Click below to see the 60-second video tutorial
 
 [![Watch the video](https://img.youtube.com/vi/JLTRx_wt9Cw/0.jpg)](https://youtu.be/JLTRx_wt9Cw)
 
