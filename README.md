@@ -1,9 +1,7 @@
 # London Issues Tracker
-<img width="354" alt="Screenshot 2024-07-02 at 1 07 10 AM" src="https://github.com/kailash19961996/Neighbourhood-app/assets/123597753/a8c3583c-ac53-4b9f-b67e-e9fb5e4798c4">
+The London Issues Tracker is an AI-powered platform developed during a hackathon by 'Future London' to engage community members and policymakers in addressing urban challenges.
 
 ## Project Overview
-# The London Issues Tracker is an AI-powered platform developed during a hackathon by 'Future London' to engage community members and policymakers in addressing urban challenges.
-
 Key features include Real-time issue reporting with interactive maps, AI-generated summaries, and graphical reports tracking trends. 
 
 The platform utilizes AI models for categorization and comment summarization, aiming to enhance urban aesthetics, community health, sustainability, and safety. 
