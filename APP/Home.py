@@ -33,10 +33,6 @@ from io import BytesIO
 import pydeck as pdk
 from background import add_bg_from_local, show_gif_overlay, get_geolocation, classify_image
 
-url = "https://github.com/kailash19961996/website_link/blob/main/website.txt"
-response = requests.get(url)
-website_address = response.text.strip()
-
 api_key = st.secrets["openai"]["api_key"]
 if api_key is None:
     raise ValueError("API key not found. Please set the OPENAI_API_KEY environment variable.")
@@ -45,7 +41,7 @@ openai.api_key = api_key
 add_bg_from_local('APP/background_images/whitebgs.jpg')
 
 st.sidebar.caption(
-    "Built by Kai. Like this? [Hire me!](website_address)"
+    "Built by Kai. Like this? [Hire me!](https://kailash.london/)"
 )
 
 
