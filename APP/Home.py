@@ -57,7 +57,7 @@ st.sidebar.caption(
     f"""
         <div style='display: flex; align-items: center;'>
             <div style='display: flex; align-items: center;'>
-            <a href = 'https://kailashsubramaniyam.com/'><img src='{website}' style='width: 45px; height: 45px; margin-right: 25px;'></a>
+            <a href = 'https://kailash.london/'><img src='{website}' style='width: 45px; height: 45px; margin-right: 25px;'></a>
             <a href = 'https://www.youtube.com/@kailashbalasubramaniyam2449/videos'><img src='{Youtube}' style='width: 28px; height: 28px; margin-right: 25px;'></a>
             <a href = 'https://www.linkedin.com/in/kailash-kumar-balasubramaniyam-62b075184'><img src='{linkedin}' style='width: 35px; height: 35px; margin-right: 25px;'></a>
             <a href = 'https://github.com/kailash19961996'><img src='{github}' style='width: 30px; height: 30px; margin-right: 25px;'></a>
@@ -294,7 +294,7 @@ st.markdown('</div>', unsafe_allow_html=True)
 
 st.markdown("""
 <div style='text-align: center;'>
-    Built by <a href="https://kailashsubramaniyam.com/">Kai</a>. Like this? <a href="https://kailashsubramaniyam.com/contact">Hire me!</a>
+    Built by Kai. Like this? <a href="https://kailash.london/">Hire me!</a>
 </div>
 """, unsafe_allow_html=True)
 
@@ -303,7 +303,7 @@ with coll2:
     st.write(
         f"""
             <div style='display: flex; align-items: center;'>
-            <a href = 'https://kailashsubramaniyam.com/'><img src='{website}' style='width: 45px; height: 45px; margin-right: 25px;'></a>
+            <a href = 'https://kailash.london/'><img src='{website}' style='width: 45px; height: 45px; margin-right: 25px;'></a>
             <a href = 'https://www.youtube.com/@kailashbalasubramaniyam2449/videos'><img src='{Youtube}' style='width: 28px; height: 28px; margin-right: 25px;'></a>
             <a href = 'https://www.linkedin.com/in/kailash-kumar-balasubramaniyam-62b075184'><img src='{linkedin}' style='width: 35px; height: 35px; margin-right: 25px;'></a>
             <a href = 'https://github.com/kailash19961996'><img src='{github}' style='width: 30px; height: 30px; margin-right: 25px;'></a>
