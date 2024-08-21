@@ -154,11 +154,14 @@ st.markdown('</div>', unsafe_allow_html=True)
 # Create an expander for project information
 with st.expander("About the Project"):
     st.markdown("""
-    # Welcome to Our Project
-The London Issues Tracker is a groundbreaking platform developed during the Future House hackathon, designed to engage community members and policymakers in addressing urban challenges. Leveraging advanced AI, the platform efficiently processes and analyzes user-submitted reports, providing valuable insights into local issues. Users can upload images and comments about urban problems, which are displayed in real-time on interactive maps. These maps allow both users and policymakers to visualize reported issues and take necessary actions.
+    # The London Issues Tracker is an AI-powered platform developed during a hackathon by 'Future London' to engage community members and policymakers in addressing urban challenges.
 
-Key features include AI-generated summaries of user comments, making it easier to understand large volumes of feedback, and graphical representations of issue trends over time, aiding in tracking progress and accountability. The platform aims to enhance urban aesthetics, improve community well-being, promote sustainability, and ensure public safety. Future development ideas include sentiment analysis, predictive modeling, and chatbot integration to further enhance user engagement and functionality. The London Issues Tracker is a powerful tool for fostering community involvement and informed decision-making in urban management.
-    """)
+Key features include Real-time issue reporting with interactive maps, AI-generated summaries, and graphical reports tracking trends. 
+
+The platform utilizes AI models for categorization and comment summarization, aiming to enhance urban aesthetics, community health, sustainability, and safety. 
+
+Future development ideas include sentiment analysis, predictive modeling, image recognition, multilingual support, and gamification to further enhance user engagement and platform capabilities.
+""")
 
 st.markdown("""
 <div style='text-align: center;'>
