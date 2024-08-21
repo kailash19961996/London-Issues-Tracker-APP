@@ -14,10 +14,6 @@ Click below to see the 60-second video tutorial
 
 [![Watch the video](https://img.youtube.com/vi/JLTRx_wt9Cw/0.jpg)](https://youtu.be/JLTRx_wt9Cw)
 
-or scan the QR code
-![qr-code](https://github.com/kailash19961996/London-Issues-Tracker-APP/assets/123597753/500c3281-6cbe-4c2f-801c-59cc73693dd1)
-
-
 ## AI Integration
 
 This project heavily relies on two AI models to enhance its functionality:
