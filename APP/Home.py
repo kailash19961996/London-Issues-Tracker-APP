@@ -42,7 +42,7 @@ openai.api_key = api_key
 add_bg_from_local('APP/background_images/whitebgs.jpg')
 
 st.sidebar.caption(
-    "Built by [Kai](https://kailashsubramaniyam.com/). Like this? [Hire me!](https://kailashsubramaniyam.com/contact)"
+    "Built by Kai. Like this? [Hire me!](https://kailash.london/)"
 )
 
 
