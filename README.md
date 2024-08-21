@@ -14,6 +14,8 @@ Click below to see the 60-second video tutorial
 
 [![Watch the video](https://img.youtube.com/vi/JLTRx_wt9Cw/0.jpg)](https://youtu.be/JLTRx_wt9Cw)
 
+[Visit my website for more](https://kailash.london/)
+
 ## AI Integration
 
 This project heavily relies on two AI models to enhance its functionality:
